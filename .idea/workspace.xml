@@ -5,386 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00a_nivelamento_gitHub.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00b_exercicios.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00c_roteiroLab.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00d_nivelamento_MyIO.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00e_nivelamento_redirecionamento.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00f_nivelamento_arquivo.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00g_nivelamento_IntroduçãoAoJava.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00h_conceitosBasicos_recursividade.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00i_conceitosBasicos_ponteiros.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00j_conceitosBasicos_formatacao.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00k_nivelamento_tratamentoExcecao.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00l_nivelamento_introducaoOO.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00m_linguagemCparaProgramadoresJava.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00n_conceitosCLASSPATH.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u00 Nivelamento/unidade00o_processoAEDsIIExercício.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01-planoEnsino.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01a-noções-complexidade-gabarito.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01a-noções-complexidade.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01a2_algoritmosPesquisa.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01a3_ordenacaoInterna_selecao.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01a3_ordenacaoInterna_selecao_estruturaCodigo.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01b1_somatorios_introdução.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01b2_somatorios_manipulação.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01b3_somatorios_metodos.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01b4_somatorios_gabarito.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01c-fundamentos-analise-complexidade-gabarito.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u01 Fundamentos de Análise de Algoritmos/unidade01c-fundamentos-analise-complexidade.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u02 Estruturas de dados básicas lineares/unidade02a_tadLinear_lista.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u02 Estruturas de dados básicas lineares/unidade02b_tadLinear_pilha.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u02 Estruturas de dados básicas lineares/unidade02c_tadLinear_fila.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03a_ordenacaoInterna_bolha.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03b_ordenacaoInterna_insercao.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03c_ordenacaoInterna_shellsort.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03d_ordenacaoInterna_quicksort.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03e_ordenacaoInterna_mergesort.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03f_ordenacaoInterna_heapsort.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03g_ordenacaoInterna_countingsort.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03h_ordenacaoInterna_radixsort.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03i_ordenacaoInterna_conclusao.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03j_ordenacaoParcial.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u03 Ordenação em memória principal/unidade03k_ordenacaoParalela.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04a_tadFlexivel_introducao.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04b_tadFlexivel_pilha.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04c_tadFlexivel_fila.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04d_tadFlexivel_listasimples.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04e_tadFlexivel_listadupla.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04f_tadFlexivel_matriz.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04g_coletaDeLixo.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04h_tadFlexivel_emC.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u04 Estruturas de dados básicas flexíveis/unidade04i_TADsNativosEmJavac.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u05 Árvores binárias/unidade05a_árvoreBinaria_introdução.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u05 Árvores binárias/unidade05b_árvoreBinaria_inserção.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u05 Árvores binárias/unidade05c_árvoreBinaria_pesquisa e caminhamento.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u05 Árvores binárias/unidade05d_árvoreBinaria_remoção.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u05 Árvores binárias/unidade05e_árvoreBinaria_em_C.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u05 Árvores binárias/unidade05f_árvoreBinaria_em_C++.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u05 Árvores binárias/unidade05g_árvoreBinaria_Estruturas Híbridas.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u06 Balanceamento de árvores/unidade06a_balanceamento.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u06 Balanceamento de árvores/unidade06b_avl.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u06 Balanceamento de árvores/unidade06c_2_3_4.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u06 Balanceamento de árvores/unidade06d_alvinegra.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u07 Tabelas e dicionários/unidade07a_tabelaHash.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u08 Árvores TRIE/unidade08a_trie.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/aulas/u08 Árvores TRIE/unidade08b_patricia.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/ajuda/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/ajuda/java/Arq.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/ajuda/java/ExemploURL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/ajuda/java/MyIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq01.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq02.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq03.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq04.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq05.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq06.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq07.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq08.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq09.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq10.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq11.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arq12.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/aquivo/arquivos.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/argumentos_main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/leituraescrita.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/makefile/helloworld.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/makefile/helloworld.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/makefile/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/makefile/makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/meuprimeiroprograma.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro01.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro02.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro03.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro04.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro05.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro05emCMaisMais.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro06.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro07.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro08.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro09.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro10.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro11.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/ponteiro/ponteiro12.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/recursividade/chamandometodo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/recursividade/contarmaiuscula.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/recursividade/fatorialrecursivo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/recursividade/fibonaccirecursivo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/recursividade/multiplicacao.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/recursividade/printrecursivo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/registro/registro01.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/registro/registro02.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/registro/registro03.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/registro/registro04.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/sizeof.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/c/string.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/argumentoMain/ArgumentoMain.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/arquivo/ExemploArq01Escrita.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/arquivo/ExemploArq02Leitura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/arquivo/ExemploArq02bLeitura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/arquivo/ExemploArq03Exercicio.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/arquivo/ExemploRAF01Escrita.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/arquivo/ExemploRAF02Leitura.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/arquivo/ExemploRAF03Cabecote.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/ExemploOO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/classeMatriz/Lixao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/classeMatriz/Matriz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/classeRetangulo/Lixao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/classeRetangulo/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/classeRetangulo/Retangulo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/estatico/Estatico.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/estatico/Lixao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/primeiraClasse/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/primeiraClasse/Lixao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/visibilidade/Lixao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/classeObjeto/visibilidade/Visibilidade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/entradaSaida/ExemploBufferedReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/entradaSaida/ExemploMyIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/entradaSaida/ExemploScanner.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/entradaSaida/entrada.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Cliente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro01Array.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro02PassagemTipoPrimitivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro03PassagemArray.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro04Objeto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro05PassagemObjeto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro06PassagemObjetoClone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro07ObjetoClone.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/ponteiro/Ponteiro08Objeto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/recursividade/ChamandoMetodo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/recursividade/ContarMaiuscula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/recursividade/FatorialRecursivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/recursividade/FibonacciRecursivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/recursividade/Multiplicacao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/recursividade/PrintRecursivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/tratamentoExcecao/TratamentoExcecao01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/tratamentoExcecao/TratamentoExcecao02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/tratamentoExcecao/TratamentoExcecao03.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/tratamentoExcecao/TratamentoExcecao04.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u00 Nivelamento/java/tratamentoExcecao/TratamentoExcecao05.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u01 Fundamentos de análise de algoritmos/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u01 Fundamentos de análise de algoritmos/java/AND_OR.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u01 Fundamentos de análise de algoritmos/java/Log.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u01 Fundamentos de análise de algoritmos/java/Pesquisa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/c/fila.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/c/lista.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/java/Fila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/java/Fila2Pilha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/java/Lista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/java/ListaOrdenada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/java/PrincipalFila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/java/PrincipalLista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u02 Estruturas de dados basicas lineares/java/PrincipalListaOrdenada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/bolha.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/bolha.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/countingsort.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/countingsort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/geracao.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/geracao.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/heapsort.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/heapsort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/insercao.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/insercao.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/mergesort.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/mergesort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/principal.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/quicksort.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/quicksort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/radixsort.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/radixsort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/selecao.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/selecao.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/shellsort.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/c/shellsort.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Bolha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Countingsort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Geracao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Heapsort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Insercao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Mergesort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/MyIO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Quicksort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Radixsort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Selecao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u03 Ordenação em memória principal/java/Shellsort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/celula.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/coletalixo/a.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/coletalixo/coletalixo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/fila.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/fila/fila.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/fila_teste.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/lista.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/lista_dupla.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/lista_dupla_teste.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/lista_teste.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/listadupla/listadupla.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/listasimples/lista.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/matriz/entrada.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/pilha.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/pilha/pilha.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/c/pilha_teste.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/TADs Nativos em Java/FilaNativa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/TADs Nativos em Java/ListaNativa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/TADs Nativos em Java/PilhaNativa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/coletalixo/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/coletalixo/ColetaLixo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/fila/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/fila/Fila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/fila/PrincipalFila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/listadupla/CelulaDupla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/listadupla/ListaDupla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/listadupla/PrincipalListaDupla.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/listasimples/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/listasimples/Lista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/listasimples/PrincipalLista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/matriz/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/matriz/Matriz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/matriz/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/matriz/entrada.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/pilha/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/pilha/Pilha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u04 Estruturas de dados básicas flexíveis/java/pilha/PrincipalPilha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreArvore/ArvoreArvore.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreArvore/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreArvore/No2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/c/arvorebinaria.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/c/arvorebinaria.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/c/makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/c/no.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/c/no.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/c/principal.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/cc/arvorebinaria.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/cc/arvorebinaria.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/cc/makefile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/cc/no.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/cc/no.h" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/cc/principal.cc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/java/ArvoreBinaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/java/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/java/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/java/Principal2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/java/Principal3.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinaria/java/TreeSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinariaDeLista/Agenda.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinariaDeLista/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinariaDeLista/Contato.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/arvoreBinariaDeLista/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/matrizDeLista/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/matrizDeLista/CelulaMat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u05 Árvores binárias/matrizDeLista/MatrizDeLista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/alvinegra/Alvinegra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/alvinegra/NoAN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/alvinegra/Oi.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/alvinegra/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/avl/AVL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/avl/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/avl/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/lab/AVL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/lab/ArvoreBinaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/lab/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u06 Balanceamento de árvores/java/lab/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u07 Tabelas e dicionários/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u07 Tabelas e dicionários/java/doidona/DoidonaComTADsProntas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u07 Tabelas e dicionários/java/doidona/DoidonaSemTADsProntas.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u07 Tabelas e dicionários/java/hashDiretoRehash/Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u07 Tabelas e dicionários/java/hashDiretoReserva/Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u07 Tabelas e dicionários/java/hashIndiretoLista/Hash.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u07 Tabelas e dicionários/java/hashIndiretoLista/Lista.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/patricia/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/patricia/Patricia.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/patricia/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trie/ArvoreTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trie/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trie/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieAB/ArvoreTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieAB/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieAB/NoAB.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieAB/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieHashAceitandoPrefixo/ArvoreTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieHashAceitandoPrefixo/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieHashAceitandoPrefixo/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieListaFlexivel/ArvoreTrie.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieListaFlexivel/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieListaFlexivel/No.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieListaFlexivel/Principal.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conteudos_estudos/fonte/u08 Árvores TRIE/java/trieVariacoes/trieListaFlexivel/oi" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/javatoso.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/Notas.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/P01Q01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/P01Q01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/P01Q02.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/P01Q02.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Teórica/Prova_1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Teórica/Resp_Q1_Q2_Q3b.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Teórica/Resp_Q3a.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P1/Teórica/Resp_Q4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/P02Q01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/P02Q01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/P02Q02.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/P02Q02.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/P03Q01.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/P03Q01.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/P03Q02.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/P03Q02.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab01/AquecimentoIterativo/AquecimentoInterativo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab01/AquecimentoRecursivo/AquecimentoRecursivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab01/lab01.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab02/combinador/combinador.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab02/combinador/combinador.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab02/lab02.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab02/sequenciaEspelho/sequenciaEspelho.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab03/balancoParenteses/balancoParenteses.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab03/balancoParenteses2/balancoParenteses2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab03/lab03.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex01_palindromoJava/palindromoJava_ex01.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex02_palindromoC/palindromoC.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex03_ciframentoCesar/ciframento.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex04_alteracaoAleatoria/alteracao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex05_algebraBoleana/algbool.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex06_IsJava/Is.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/leituraHtml.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/arquivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex09_arquivoC/arquivo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex10_palindromoRecursivoJava/palindromoRecursivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex11_PalindromoRecursivoC/ideiaOriginal.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex11_PalindromoRecursivoC/palindromoRecursivo.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex12_ciframentoCesarRecursivo/ciframentoCesarRecursivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex13_alteracaoAleatorioC/alteracao.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex14_algebraBoleanaRecursiva/algebraRecursiva.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex15_IsRecursivoJava/isRecursivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/pub.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/pub.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/pub.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/pub.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/leituraHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/leituraHtml.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/arquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/arquivo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex13_alteracaoAleatorioC/alteracao.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp1/ex13_alteracaoAleatorioC/alteracao.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;bernardovieirarocha&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;git@github.com:bernardovieirarocha/aeds2.git&quot;,
+    &quot;accountId&quot;: &quot;28c78523-1a84-4c28-84ef-d1f52075b303&quot;
+  }
+}</component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -415,17 +56,22 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.algebraRecursiva.executor": "Debug",
+    "Application.arquivo.executor": "Run",
     "Application.ciframentoCesarRecursivo.executor": "Run",
+    "Application.leituraHtml.executor": "Run",
+    "Application.teste.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/tps/tp1/ex07_leituraHTML",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -433,12 +79,16 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML" />
+      <recent name="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML" />
       <recent name="$PROJECT_DIR$/src/labs/lab03/balancoParenteses2" />
       <recent name="$PROJECT_DIR$/src/labs/lab03/balancoParenteses" />
       <recent name="$PROJECT_DIR$/src/labs/lab02/combinador" />
       <recent name="$PROJECT_DIR$/src/labs/lab02/sequenciaEspelho" />
-      <recent name="$PROJECT_DIR$/src/labs/lab01/AquecimentoRecursivo" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tps.tp1.IsRecursivoJava" />
@@ -447,6 +97,20 @@
       <recent name="tps.tp1.palindromoRecursivoJava_ex10" />
       <recent name="tps.tp1.leituraHTML_ex07" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="teste" />
+      <module name="javatoso" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.teste" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -472,10 +136,23 @@
       <workItem from="1724870784486" duration="6000" />
       <workItem from="1724882501049" duration="5037000" />
       <workItem from="1724894504357" duration="1888000" />
+      <workItem from="1724896453611" duration="485000" />
+      <workItem from="1724926901055" duration="7946000" />
+      <workItem from="1724976300943" duration="5872000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
+          <option name="timeStamp" value="10" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

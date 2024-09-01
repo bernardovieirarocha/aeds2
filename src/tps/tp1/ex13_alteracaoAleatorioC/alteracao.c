@@ -22,7 +22,7 @@ void alteracao(char palavra[], char s1, char s2, int i, int tam) {
 }
 
 int main(void) {
-  srand(time(NULL));
+  srand(4);
 
   char palavra[1000];
 

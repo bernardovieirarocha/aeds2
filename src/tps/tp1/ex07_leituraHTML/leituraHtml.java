@@ -8,11 +8,11 @@ import java.net.*;
 
 @SuppressWarnings("WrongPackageStatement")
 public class leituraHtml {
-  // Array que armazena as vogais e suas respectivas quantidades.
-  static int[] vogais;
+      // Array que armazena as vogais e suas respectivas quantidades.
+      static int[] vogais;
 
   // Array que armazena o valor do char de cada uma das vogais especiais.
-  static final char[] vogalEspecial = {
+    static final char[] vogalEspecial = {
       225, // á 0
       233, // é 1
       237, // í 2
@@ -30,44 +30,56 @@ public class leituraHtml {
       238, // î 14
       244, // ô 15
       251  // û 16
-  };
+    };
 
-  // ------- Funcao Fornecida pelo Professor:
-
-  public static void printVariaveis() {
-    System.out.printf("a(%s) ", vogais[0]);
-    System.out.printf("e(%s) ", vogais[1]);
-    System.out.printf("i(%s) ", vogais[2]);
-    System.out.printf("o(%s) ", vogais[3]);
-    System.out.printf("u(%s) ", vogais[4]);
-    System.out.printf("%c(%s) ", vogalEspecial[0], vogais[5]);
-    System.out.printf("%c(%s) ", vogalEspecial[1], vogais[6]);
-    System.out.printf("%c(%s) ", vogalEspecial[2], vogais[7]);
-    System.out.printf("%c(%s) ", vogalEspecial[3], vogais[8]);
-    System.out.printf("%c(%s) ", vogalEspecial[4], vogais[9]);
-    System.out.printf("%c(%s) ", vogalEspecial[5], vogais[10]);
-    System.out.printf("%c(%s) ", vogalEspecial[6], vogais[11]);
-    System.out.printf("%c(%s) ", vogalEspecial[7], vogais[12]);
-    System.out.printf("%c(%s) ", vogalEspecial[8], vogais[13]);
-    System.out.printf("%c(%s) ", vogalEspecial[9], vogais[14]);
-    System.out.printf("%c(%s) ", vogalEspecial[10], vogais[15]);
-    System.out.printf("%c(%s) ", vogalEspecial[11], vogais[16]);
-    System.out.printf("%c(%s) ", vogalEspecial[12], vogais[17]);
-    System.out.printf("%c(%s) ", vogalEspecial[13], vogais[18]);
-    System.out.printf("%c(%s) ", vogalEspecial[14], vogais[19]);
-    System.out.printf("%c(%s) ", vogalEspecial[15], vogais[20]);
-    System.out.printf("%c(%s) ", vogalEspecial[16], vogais[21]);
-  }
-
-  public static boolean isEspecialVogal(char letra) {
-    for (int i = 0; i < vogalEspecial.length; i++) {
-      if (letra == vogalEspecial[i]) {
-        return true;
-      }
+    /**
+     * Imprime as quantidades de cada vogal e vogal especial.
+     */
+    public static void printVariaveis() {
+        System.out.printf("a(%s) ", vogais[0]);
+        System.out.printf("e(%s) ", vogais[1]);
+        System.out.printf("i(%s) ", vogais[2]);
+        System.out.printf("o(%s) ", vogais[3]);
+        System.out.printf("u(%s) ", vogais[4]);
+        System.out.printf("%c(%s) ", vogalEspecial[0], vogais[5]);
+        System.out.printf("%c(%s) ", vogalEspecial[1], vogais[6]);
+        System.out.printf("%c(%s) ", vogalEspecial[2], vogais[7]);
+        System.out.printf("%c(%s) ", vogalEspecial[3], vogais[8]);
+        System.out.printf("%c(%s) ", vogalEspecial[4], vogais[9]);
+        System.out.printf("%c(%s) ", vogalEspecial[5], vogais[10]);
+        System.out.printf("%c(%s) ", vogalEspecial[6], vogais[11]);
+        System.out.printf("%c(%s) ", vogalEspecial[7], vogais[12]);
+        System.out.printf("%c(%s) ", vogalEspecial[8], vogais[13]);
+        System.out.printf("%c(%s) ", vogalEspecial[9], vogais[14]);
+        System.out.printf("%c(%s) ", vogalEspecial[10], vogais[15]);
+        System.out.printf("%c(%s) ", vogalEspecial[11], vogais[16]);
+        System.out.printf("%c(%s) ", vogalEspecial[12], vogais[17]);
+        System.out.printf("%c(%s) ", vogalEspecial[13], vogais[18]);
+        System.out.printf("%c(%s) ", vogalEspecial[14], vogais[19]);
+        System.out.printf("%c(%s) ", vogalEspecial[15], vogais[20]);
+        System.out.printf("%c(%s) ", vogalEspecial[16], vogais[21]);
     }
+
+    /**
+     * Verifica se um caractere é uma vogal especial.
+     *
+     * @param letra Caractere a ser verificado.
+     * @return true se for uma vogal especial, false caso contrário.
+     */
+    public static boolean isEspecialVogal(char letra) {
+      for (char c : vogalEspecial) {
+          if (letra == c) {
+              return true;
+          }
+      }
     return false;
   }
 
+  /**
+    * Conta a quantidade de cada vogal e vogal especial em uma string HTML.
+    *
+    * @param html String HTML a ser analisada.
+  */
   public static void countVogais(String html) {
     vogais = new int[23]; // aeiou + caracters especiais
     for (int i = 0; i < html.length(); ++i) {
@@ -95,6 +107,12 @@ public class leituraHtml {
     }
   }
 
+    /**
+     * Conta a quantidade de consoantes em uma string HTML.
+     *
+     * @param html String HTML a ser analisada.
+     * @return Quantidade de consoantes.
+     * */
   public static int countConsoantes(String html) {
     int result = 0;
     String consoantes = "bcdfghjklmnpqrstvwxyz";
@@ -109,17 +127,27 @@ public class leituraHtml {
     }
     return result;
   }
-
+    /**
+     * Conta a quantidade de ocorrências da tag <br> em uma string HTML.
+     *
+     * @param html String HTML a ser analisada.
+     * @return Quantidade de ocorrências da tag <br>.
+     */
   public static int countBR(String html) {
     int result = 0;
-    for (int i = 0; i < html.length(); i++) {
+    for (int i = 0; i < html.length() - 4; i++) {
       if (html.substring(i, i + 4).equals("<br>")) {
         result++;
       }
     }
     return result;
   }
-
+    /**
+     * Conta a quantidade de ocorrências da tag <table> em uma string HTML.
+     *
+     * @param html String HTML a ser analisada.
+     * @return Quantidade de ocorrências da tag <table>.
+     */
   public static int countTable(String html) {
     int result = 0;
     for (int x = 0; x < html.length() - 7; x = x + 1) {
@@ -130,6 +158,7 @@ public class leituraHtml {
     return (result);
   } // end countTable ( )
 
+
   public static void main(String[] args) {
 //    MyIO.setCharset("UTF-8");
     String nome;
@@ -139,15 +168,14 @@ public class leituraHtml {
     int qtd_consoantes = 0, qtd_br = 0, qtd_table = 0;
 
     do {
-       nome = MyIO.readLine();
+        nome = MyIO.readLine();
       if (!nome.equals("FIM")) {
-         endereco = MyIO.readLine();
-        html = getHtml(endereco);
-
-         countVogais(html);
-         qtd_consoantes = countConsoantes(html);
-         qtd_br = countBR(html);
-         qtd_table = countTable(html);
+          endereco = MyIO.readLine();
+          html = getHtml(endereco);
+          countVogais(html);
+          qtd_consoantes = countConsoantes(html);
+          qtd_br = countBR(html);
+          qtd_table = countTable(html);
 
          vogais[0] -= qtd_table; // descontar o 'a' da palavra "table"
          vogais[1] -= qtd_table; // descontar o 'e' da palavra "table"
@@ -164,8 +192,8 @@ public class leituraHtml {
 
     } while (!nome.equals("FIM"));
   }
-
-  public static String getHtml(String endereco){
+    // ------- Funcao Fornecida pelo Professor:
+    public static String getHtml(String endereco){
       URL url;
       InputStream is = null;
       BufferedReader br;
@@ -179,14 +207,14 @@ public class leituraHtml {
          while ((line = br.readLine()) != null) {
             resp += line + "\n";
          }
-      } catch (MalformedURLException mue) {
-         mue.printStackTrace();
       } catch (IOException ioe) {
          ioe.printStackTrace();
-      } 
+      }
 
       try {
-         is.close();
+
+          assert is != null;
+          is.close();
       } catch (IOException ioe) {
          // nothing to see here
 

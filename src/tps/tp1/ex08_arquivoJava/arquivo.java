@@ -1,4 +1,3 @@
-package tps.tp1.ex08_arquivoJava;
 /*
  * Bernardo Vieira Rocha - 853733
  * Ciencia da Computacao PUC-MINAS
@@ -11,6 +10,7 @@ import java.util.Scanner;
 /*
  * Classe que ensina o uso do RandomAccessFile que eh uma forma de ler e escrever arquivos de forma nao sequencial com suporte a ponteiros e maior flexibilidade.
 *  */
+@SuppressWarnings("WrongPackageStatement")
 public class arquivo {
     /*
     * Funcao que escreve (n) vezes varios doubles no arquivo.txt (bit a bit)
