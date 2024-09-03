@@ -5,15 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/teste.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/pub.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/lab04/lab04.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/lab04/pub.in" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/lab04/pub.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/lab04/sort.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/leituraHtml.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/leituraHtml.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/arquivo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava/arquivo.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex13_alteracaoAleatorioC/alteracao.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp1/ex13_alteracaoAleatorioC/alteracao.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/leituraHtml.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/teste.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/teste.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -56,16 +56,18 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.algbool.executor": "Debug",
     "Application.algebraRecursiva.executor": "Debug",
     "Application.arquivo.executor": "Run",
     "Application.ciframentoCesarRecursivo.executor": "Run",
     "Application.leituraHtml.executor": "Run",
-    "Application.teste.executor": "Run",
+    "Application.sort.executor": "Run",
+    "Application.teste.executor": "Debug",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/tps/tp1/ex07_leituraHTML",
+    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/labs/lab04",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -80,15 +82,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/labs/lab04" />
       <recent name="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML" />
       <recent name="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/labs/lab04" />
       <recent name="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML" />
       <recent name="$PROJECT_DIR$/src/labs/lab03/balancoParenteses2" />
       <recent name="$PROJECT_DIR$/src/labs/lab03/balancoParenteses" />
       <recent name="$PROJECT_DIR$/src/labs/lab02/combinador" />
-      <recent name="$PROJECT_DIR$/src/labs/lab02/sequenciaEspelho" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tps.tp1.IsRecursivoJava" />
@@ -138,7 +141,8 @@
       <workItem from="1724894504357" duration="1888000" />
       <workItem from="1724896453611" duration="485000" />
       <workItem from="1724926901055" duration="7946000" />
-      <workItem from="1724976300943" duration="5872000" />
+      <workItem from="1724976300943" duration="6642000" />
+      <workItem from="1725286620554" duration="8211000" />
     </task>
     <servers />
   </component>
@@ -152,6 +156,31 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="10" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>132</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>135</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>137</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>142</line>
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>149</line>
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
