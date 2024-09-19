@@ -5,15 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab04/lab04.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab04/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab04/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab04/sort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/AlfabetoAlienigena.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/DicionarioAndy/dicionarioAndy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/Eletricidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/EtiquetasNoel/EtiquetasNoel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/FilaSus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/JogandoCartasFora/jogandoCartasFora.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ListaCriancasPapaiNoel/ListaCriancasPapaiNoel.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ListaCriancasPapaiNoel/ListaCriancasPapaiNoel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/MenorPilha.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/MenorPilhaRapido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/PontosFeno/PontosFeno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/PresentesNoel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/QuadroMedalhas/QuadroMedalhas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/SequenciaSecreta/SequenciaSecreta.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TecladoQuebrado/tecladoQuebrado.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TecladoQuebrado/tecladoQuebradoRapido.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TimeDuendes/timeDuendes.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/VogaisAlienigenas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/alarmeDespertador/alarmeDespertador.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ordenacaoTamanho/ordenacaoTamanho.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/tads/Lista.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/tads/ListaCustomizada.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/leituraHtml.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/teste.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML/teste.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labs/lab04/sort.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/labs/lab04/sort.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +60,9 @@
     &quot;accountId&quot;: &quot;28c78523-1a84-4c28-84ef-d1f52075b303&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
 }</component>
@@ -56,15 +74,40 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.AlfabetoAlienigena.executor": "Debug",
+    "Application.Eletricidade.executor": "Run",
+    "Application.EtiquetasNoel.executor": "Debug",
+    "Application.FilaSus.executor": "Run",
+    "Application.ListaCriancasPapaiNoel.executor": "Run",
+    "Application.ListaNova.executor": "Debug",
+    "Application.MenorPilha.executor": "Run",
+    "Application.MenorPilhaRapido.executor": "Run",
+    "Application.PontosFeno.executor": "Run",
+    "Application.PresentesNoel.executor": "Run",
+    "Application.QuadroMedalhas.executor": "Run",
+    "Application.SequenciaSecreta.executor": "Run",
+    "Application.VogaisAlienigenas.executor": "Run",
+    "Application.alarmeDespertador.executor": "Run",
     "Application.algbool.executor": "Debug",
     "Application.algebraRecursiva.executor": "Debug",
     "Application.arquivo.executor": "Run",
     "Application.ciframentoCesarRecursivo.executor": "Run",
+    "Application.dicionarioAndy.executor": "Run",
+    "Application.jogandoCartasFora.executor": "Run",
     "Application.leituraHtml.executor": "Run",
-    "Application.sort.executor": "Run",
-    "Application.teste.executor": "Debug",
+    "Application.listanova.executor": "Run",
+    "Application.ordenacaoTamanho.executor": "Run",
+    "Application.sig.executor": "Run",
+    "Application.sort.executor": "Debug",
+    "Application.tecladoQuebrado.executor": "Debug",
+    "Application.tecladoQuebradoRapido.executor": "Run",
+    "Application.teste.executor": "Run",
+    "Application.testeLexico.executor": "Run",
+    "Application.testeTAD_Lista.executor": "Run",
+    "Application.timeDuendes.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ShowUsagesActions.previewPropertyKey": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/labs/lab04",
@@ -93,6 +136,9 @@
       <recent name="$PROJECT_DIR$/src/labs/lab03/balancoParenteses" />
       <recent name="$PROJECT_DIR$/src/labs/lab02/combinador" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="exercicios.beecrowd" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="tps.tp1.IsRecursivoJava" />
       <recent name="tps.tp1.ex14_algebraBoleanaRecursiva" />
@@ -118,8 +164,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.20224.419" />
-        <option value="bundled-js-predefined-d6986cc7102b-410509235cf1-JavaScript-IU-242.20224.419" />
+        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
+        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
       </set>
     </attachedChunks>
   </component>
@@ -142,7 +188,15 @@
       <workItem from="1724896453611" duration="485000" />
       <workItem from="1724926901055" duration="7946000" />
       <workItem from="1724976300943" duration="6642000" />
-      <workItem from="1725286620554" duration="8211000" />
+      <workItem from="1725286620554" duration="8274000" />
+      <workItem from="1725457613622" duration="2793000" />
+      <workItem from="1725461543886" duration="2740000" />
+      <workItem from="1725533201282" duration="15394000" />
+      <workItem from="1725835530152" duration="1741000" />
+      <workItem from="1725838123792" duration="685000" />
+      <workItem from="1725892039257" duration="1694000" />
+      <workItem from="1725990745030" duration="2126000" />
+      <workItem from="1726145793324" duration="60247000" />
     </task>
     <servers />
   </component>
@@ -156,30 +210,59 @@
           <properties class="java.lang.StringIndexOutOfBoundsException" package="java.lang" />
           <option name="timeStamp" value="10" />
         </breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
-          <line>132</line>
-          <option name="timeStamp" value="35" />
+          <line>56</line>
+          <properties class="sort" method="ordenarVetorBubbleSort">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
-          <line>135</line>
-          <option name="timeStamp" value="36" />
+          <line>58</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
-          <line>137</line>
-          <option name="timeStamp" value="37" />
+          <line>59</line>
+          <option name="timeStamp" value="49" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
-          <line>142</line>
-          <option name="timeStamp" value="38" />
+          <line>61</line>
+          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
-          <line>149</line>
-          <option name="timeStamp" value="39" />
+          <line>177</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>178</line>
+          <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>179</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>169</line>
+          <option name="timeStamp" value="54" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
+          <line>170</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/exercicios/beecrowd/AlfabetoAlienigena.java</url>
+          <line>14</line>
+          <option name="timeStamp" value="119" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

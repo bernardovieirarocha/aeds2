@@ -1,5 +1,3 @@
-import java.util.Arrays;
-
 /**
  * Bernardo Vieira Rocha - 853733
  * Ciencia da Computacao PUC-MINAS
@@ -56,7 +54,7 @@ public class sort {
      * @param mods - vetor de inteiros com os resultados dos mods
      * @info Complexidade: Bubble Sort O(n^2);
      */
-    public static void ordenarVetorBubbleSort(int input[] ,int [] mods, int tamanho) {
+    public static void ordenarVetorBubbleSort(int[] input ,int [] mods, int tamanho) {
          // Ordenar o vetor de numeros com base no resultado dos mods
         for (int i = 0; i < tamanho - 1; ++i) {
             for (int j = i + 1; j < tamanho; ++j) {
@@ -75,7 +73,7 @@ public class sort {
     * @param mods - vetor de inteiros com os resultados dos mods
     * @info Complexidade: Selection Sort O(n^2);
      */
-    public static void ordenarVetorSelectionSort(int input[], int[] mods, int tamanho){
+    public static void ordenarVetorSelectionSort(int[] input, int[] mods, int tamanho){
         // Vai ate o tamanho - 1 para nao comparar o ultimo elemento com o vazio (IndexOutOfBounds)
         for (int i = 0; i < tamanho - 1; i++) {
             int min = i;
@@ -90,7 +88,7 @@ public class sort {
         }
     }
 
-    /*
+    /**
     * Funcao que verifica se a deve-se trocar um par que esta precedendo um impar
     * @param i - inteiro
     * @param j - inteiro
@@ -100,7 +98,7 @@ public class sort {
         return i % 2 == 0 && j % 2 != 0;
     }
 
-    /*
+    /**
     * Funcao que verifica se dois impares estao precedendo um ao outro e a regra de desempate e a ordem decrescente
     * @param i - inteiro
     * @param j - inteiro
@@ -110,7 +108,7 @@ public class sort {
         return i % 2 != 0 && j % 2 != 0;
     }
 
-    /*
+    /**
     * Funcao que verifica se dois pares estao precedendo um ao outro e a regra de desempate e a ordem crescente
     * @param i - inteiro
     * @param j - inteiro
@@ -120,16 +118,16 @@ public class sort {
         return i % 2 == 0 && j % 2 == 0;
     }
 
-    /*
+    /**
     * Funcao que checa as regras de desempate
     * @param input - vetor de inteiros
     * @param mods - vetor de inteiros com os resultados dos mods
     * @param tam - tamanho do vetor
     * @info Complexidade:
      */
-    public static void checarRegrasDesempate(int input[], int[] mods, int tam) {
+    public static void checarRegrasDesempate(int[] input, int[] mods, int tam) {
         // Se houver troca, o loop deve continuar ate que nao haja mais trocas para garantir que a ordenacao esteja correta
-        boolean houveTroca = false;
+        boolean houveTroca;
         do {
             houveTroca = false;
             // Loop para comparar o anterior e o proximo
@@ -174,13 +172,13 @@ public class sort {
             if (tamanho == 0 ){
                 System.out.printf("%d %d\n", tamanho, modulo);
                 break;
-            };
+            }
 
 
             int[] inputNumeros = new int[tamanho];
             lerVetor(inputNumeros, tamanho);
             int[] mods = calcularMods(inputNumeros, tamanho, modulo);
-            ordenarVetorSelectionSort(inputNumeros, mods, tamanho);
+            ordenarVetorBubbleSort(inputNumeros, mods, tamanho);
             checarRegrasDesempate(inputNumeros, mods, tamanho);
             System.out.printf("%d %d\n", tamanho, modulo);
             imprimirVetor(inputNumeros, tamanho);
