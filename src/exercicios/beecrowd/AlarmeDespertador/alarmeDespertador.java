@@ -1,4 +1,4 @@
-package exercicios.beecrowd.alarmeDespertador;
+package exercicios.beecrowd.AlarmeDespertador;
 
 import java.util.Scanner;
 

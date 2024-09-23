@@ -1,4 +1,4 @@
-package exercicios.beecrowd.ordenacaoTamanho;
+package exercicios.beecrowd.OrdenacaoTamanho;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package exercicios.beecrowd;
+package exercicios.beecrowd.PresentesNoel;
 
 import java.util.Scanner;
 

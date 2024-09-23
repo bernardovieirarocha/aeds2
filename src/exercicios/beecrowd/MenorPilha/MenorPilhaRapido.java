@@ -1,4 +1,4 @@
-package exercicios.beecrowd;
+package exercicios.beecrowd.MenorPilha;
 
 import java.util.Stack;
 import java.util.Scanner;

@@ -1,4 +1,4 @@
-package exercicios.beecrowd;
+package exercicios.beecrowd.FilaSus;
 
 import java.util.ArrayList;
 import java.util.Scanner;

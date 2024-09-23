@@ -1,4 +1,4 @@
-package exercicios.beecrowd;
+package exercicios.beecrowd.Eletricidade;
 
 import java.util.Scanner;
 

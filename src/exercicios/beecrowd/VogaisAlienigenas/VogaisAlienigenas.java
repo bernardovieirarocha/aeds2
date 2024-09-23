@@ -1,4 +1,4 @@
-package exercicios.beecrowd;
+package exercicios.beecrowd.VogaisAlienigenas;
 
 import java.util.Scanner;
 
