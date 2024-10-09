@@ -4,7 +4,9 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
+// --- Estruturas de Dados
 struct types {
   char *type1;
   char *type2;
@@ -36,6 +38,9 @@ struct PokeList {
   int tamanho;
   int capacidade;
 } typedef PokeList;
+
+int comparacoes = 0;
+// --- FIM Estruturas de Dados
 
 // --- Biblioteca de Funções Auxiliares
 
@@ -216,6 +221,9 @@ char *str_replace_c(const char *_Str, const char _OldChar,
   } // end if
   return (_Dest);
 } // end str_replace_c ( )
+
+// --- FIM Biblioteca de Funções Auxiliares
+
 
 // Funcoes GET
 char *getId(pokemon *p) { return p->id; }
@@ -455,6 +463,7 @@ void inicializarPokemon(pokemon *p, char *id, char *generation, char *name,
 }
 
 void lerCSV(Pokedex *pokedex, char *filename, char *id_search) {
+
   FILE *file = fopen(filename, "r");
   if (file == NULL) {
     printf("Error opening file\n");
@@ -512,6 +521,7 @@ void lerCSV(Pokedex *pokedex, char *filename, char *id_search) {
   fclose(file);
 }
 
+// Funcao para procurar um pokemon na pokedex
 pokemon *procurarPokemon(Pokedex *pokedex, char *id) {
   for (int i = 0; i < pokedex->tamanho; i++) {
     if (getId(&pokedex->pokemon[i]) != NULL &&
@@ -522,6 +532,7 @@ pokemon *procurarPokemon(Pokedex *pokedex, char *id) {
   return NULL;
 }
 
+// Funcao para adicionar um pokemon na lista de pokemons
 void addPokemonList(PokeList *pokeList, pokemon *poke) {
   if (poke == NULL) {
     return;
@@ -529,6 +540,38 @@ void addPokemonList(PokeList *pokeList, pokemon *poke) {
   pokeList->pokemon[pokeList->tamanho] = *poke;
   pokeList->tamanho++;
 }
+
+
+// ------ Funcoes para ordenar a lista de pokemons por nome
+
+// Funcao de comparacao de strings para ordenacao
+int procurarMenor(PokeList *pokelist, int start, int min) {
+  if (start >= pokelist->tamanho) {
+    return min;
+  }
+  comparacoes++;
+  if (strcmp(pokelist->pokemon[start].name, pokelist->pokemon[min].name) < 0) {
+    min = start;
+  }
+  return procurarMenor(pokelist, start + 1, min);
+}
+// Funcao de ordenacao por selecao recursiva
+void ordenarSelecaoRecursivaPokeListPorNome(PokeList *pokelist, int start) {
+  if (start >= pokelist->tamanho - 1) {
+    return;
+  }
+  int min = procurarMenor(pokelist, start + 1, start);
+  pokemon temp = pokelist->pokemon[start];
+  pokelist->pokemon[start] = pokelist->pokemon[min];
+  pokelist->pokemon[min] = temp;
+  ordenarSelecaoRecursivaPokeListPorNome(pokelist, start + 1);
+}
+// Wrapper para a funcao de ordenacao recursiva
+void ordenarSelecaoRecursivaPokeListPorNomeWrapper(PokeList *pokelist) {
+  ordenarSelecaoRecursivaPokeListPorNome(pokelist, 0);
+}
+
+// ------- FIM DAS FUNCOES DE ORDENACAO
 
 int main(void) {
   setlocale(LC_CTYPE, "UTF-8");
@@ -550,9 +593,31 @@ int main(void) {
     scanf("%s", id);
   }
 
+  // Pegar o tempo de execução do programa
+  clock_t start_time = clock();
+
+  ordenarSelecaoRecursivaPokeListPorNomeWrapper(pokeList);
+
+  // Finaliza a medição do tempo
+  clock_t end_time = clock();
+  double execution_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
+
+  // Printar a lista de pokemons ordenada
   for (int i = 0; i < pokeList->tamanho; i++) {
     printPokemon(&pokeList->pokemon[i]);
   }
 
+  // Criar arquivo de log
+  FILE *logFile;
+  logFile = fopen("853733_selecaoRecursiva.txt", "w");
+  if (logFile == NULL) {
+    printf("Erro ao criar arquivo de log\n");
+    return 1;
+  }
+  // Escreve no formato: matrícula \t tempo de execução \t número de comparações
+  fprintf(logFile, "853733\t%.6f\t%d\n", execution_time, comparacoes);
+  fclose(logFile);
+
+  free(pokeList->pokemon);
   return 0;
 }

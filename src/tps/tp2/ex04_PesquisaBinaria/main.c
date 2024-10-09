@@ -4,6 +4,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <time.h>
 
 struct types {
   char *type1;
@@ -36,6 +37,8 @@ struct PokeList {
   int tamanho;
   int capacidade;
 } typedef PokeList;
+
+int comparacoes = 0;
 
 // --- Biblioteca de Funções Auxiliares
 
@@ -522,6 +525,41 @@ pokemon *procurarPokemon(Pokedex *pokedex, char *id) {
   return NULL;
 }
 
+void ordenarPokeListPorNome(PokeList *pokelist) {
+  for (int i = 0; i < pokelist->tamanho; i++) {
+    for (int j = i + 1; j < pokelist->tamanho; j++) {
+      comparacoes++;
+      if (strcmp(getName(&pokelist->pokemon[i]),
+                 getName(&pokelist->pokemon[j])) > 0) {
+        pokemon aux = pokelist->pokemon[i];
+        pokelist->pokemon[i] = pokelist->pokemon[j];
+        pokelist->pokemon[j] = aux;
+      }
+    }
+  }
+}
+
+pokemon *procurarPokemonPorNomePesquisaBinaria(PokeList *pokelist, char *name) {
+  int inicio = 0;
+  int fim = pokelist->tamanho - 1;
+  int meio;
+
+  while (inicio <= fim) {
+    meio = (inicio + fim) / 2;
+    if (strcmp(getName(&pokelist->pokemon[meio]), name) == 0) {
+      comparacoes++;
+
+      return &pokelist->pokemon[meio];
+    } else if (strcmp(getName(&pokelist->pokemon[meio]), name) < 0) {
+      comparacoes++;
+      inicio = meio + 1;
+    } else {
+      fim = meio - 1;
+    }
+  }
+  return NULL;
+}
+
 void addPokemonList(PokeList *pokeList, pokemon *poke) {
   if (poke == NULL) {
     return;
@@ -550,9 +588,37 @@ int main(void) {
     scanf("%s", id);
   }
 
-  for (int i = 0; i < pokeList->tamanho; i++) {
-    printPokemon(&pokeList->pokemon[i]);
+  // Pegar o tempo de execução do programa
+  clock_t start_time = clock();
+
+  ordenarPokeListPorNome(pokeList);
+
+  char name[50];
+  scanf("%s", name);
+  while (strcmp(name, "FIM") != 0 && strcmp(name, "0") != 0) {
+    if (procurarPokemonPorNomePesquisaBinaria(pokeList, name) != NULL) {
+      printf("SIM\n");
+    } else {
+      printf("NAO\n");
+    }
+    scanf("%s", name);
   }
 
+  // Finaliza a medição do tempo
+  clock_t end_time = clock();
+  double execution_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
+
+  // Criar arquivo de log
+  FILE *logFile;
+  logFile = fopen("853733_binaria.txt", "w");
+  if (logFile == NULL) {
+    printf("Erro ao criar arquivo de log\n");
+    return 1;
+  }
+  // Escreve no formato: matrícula \t tempo de execução \t número de comparações
+  fprintf(logFile, "853733\t%.6f\t%d\n", execution_time, comparacoes);
+  fclose(logFile);
+
+  free(pokeList->pokemon);
   return 0;
 }

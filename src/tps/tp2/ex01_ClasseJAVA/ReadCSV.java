@@ -1,13 +1,15 @@
-package tps.tp2;
+package tps.tp2.ex01_ClasseJAVA;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+
 public class ReadCSV {
+
+    // Funcao para ler o arquivo CSV e retornar uma lista de Pokemons
     public static List<Pokemon> readCSV(String path) {
         List<Pokemon> pokemons = new ArrayList<>();
 
@@ -40,12 +42,6 @@ public class ReadCSV {
             }
         }
         return new String(formattedArray);
-    }
-
-
-    public static void main(String[] args) {
-        List<Pokemon> pokemons = readCSV("src/tps/tp2/pokemon.csv");
-                    System.out.println(pokemons);
     }
 
 }

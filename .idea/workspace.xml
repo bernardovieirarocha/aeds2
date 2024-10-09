@@ -5,29 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/labs/lab05/lab05.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/lab06/QuickSortSeuPivo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/lab06/desempenhoBarras.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/labs/lab06/lab06.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex03_PesquisaSequencial/ex03_PesquisaSequencial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex04_PesquisaBinaria/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex05_OrdenacaoSelecao/ex05_OrdenacaoSelecao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex07_OrdenacaoInsercao/ex07_OrdenacaoInsercao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/AlfabetoAlienigena.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/AlfabetoAlienigena/AlfabetoAlienigena.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/Eletricidade.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/Eletricidade/Eletricidade.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/FilaSus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/FilaSus/FilaSus.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/MenorPilha.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/MenorPilha/MenorPilha.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/MenorPilhaRapido.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/MenorPilha/MenorPilhaRapido.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/PresentesNoel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/PresentesNoel/PresentesNoel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/VogaisAlienigenas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/VogaisAlienigenas/VogaisAlienigenas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/alarmeDespertador/alarmeDespertador.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/AlarmeDespertador/alarmeDespertador.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/ordenacaoTamanho/ordenacaoTamanho.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/OrdenacaoTamanho/ordenacaoTamanho.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/alarmedespertador.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/AlarmeDespertador/alarmedespertador.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/alfabetoalienigena.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/AlfabetoAlienigena/alfabetoalienigena.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/dicAndy.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/DicionarioAndy/dicAndy.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/dicionarioAndy.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/DicionarioAndy/dicionarioAndy.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/etiquetasNoel.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/EtiquetasNoel/etiquetasNoel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/jogandoCartasFora.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/JogandoCartasFora/jogandoCartasFora.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/luis.c" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/menorPilha.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/MenorPilha/menorPilha.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/ordenacaoTamanho.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/OrdenacaoTamanho/ordenacaoTamanho.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/ordenandoListaCriancasNoel.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ListaCriancasPapaiNoel/ordenandoListaCriancasNoel.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/quadroMedalhas.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/QuadroMedalhas/quadroMedalhas.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/tecladoQuebrado.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TecladoQuebrado/tecladoQuebrado.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowdC/timeDuendes.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TimeDuendes/timeDuendes.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/javatoso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javatoso.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/Pokemon.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/PokemonSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/PokemonSearch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/ReadCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/ReadCSV.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/sig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/sig.c" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,9 +33,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="module-info" />
-        <option value="Python Script" />
         <option value="package-info" />
+        <option value="Record" />
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -60,7 +56,7 @@
   }
 }</component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
+    <option name="selectedTabId" value="DEPENDENCY_CHECKER_PROBLEMS_TAB" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -71,69 +67,80 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.AlfabetoAlienigena.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.Eletricidade.executor&quot;: &quot;Run&quot;,
-    &quot;Application.EtiquetasNoel.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.FilaSus.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaCriancasPapaiNoel.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ListaNova.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.MenorPilha.executor&quot;: &quot;Run&quot;,
-    &quot;Application.MenorPilhaRapido.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PontosFeno.executor&quot;: &quot;Run&quot;,
-    &quot;Application.PresentesNoel.executor&quot;: &quot;Run&quot;,
-    &quot;Application.QuadroMedalhas.executor&quot;: &quot;Run&quot;,
-    &quot;Application.SequenciaSecreta.executor&quot;: &quot;Run&quot;,
-    &quot;Application.VogaisAlienigenas.executor&quot;: &quot;Run&quot;,
-    &quot;Application.alarmeDespertador.executor&quot;: &quot;Run&quot;,
-    &quot;Application.algbool.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.algebraRecursiva.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.arquivo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ciframentoCesarRecursivo.executor&quot;: &quot;Run&quot;,
-    &quot;Application.dicionarioAndy.executor&quot;: &quot;Run&quot;,
-    &quot;Application.jogandoCartasFora.executor&quot;: &quot;Run&quot;,
-    &quot;Application.leituraHtml.executor&quot;: &quot;Run&quot;,
-    &quot;Application.listanova.executor&quot;: &quot;Run&quot;,
-    &quot;Application.ordenacaoTamanho.executor&quot;: &quot;Run&quot;,
-    &quot;Application.sig.executor&quot;: &quot;Run&quot;,
-    &quot;Application.sort.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.tecladoQuebrado.executor&quot;: &quot;Debug&quot;,
-    &quot;Application.tecladoQuebradoRapido.executor&quot;: &quot;Run&quot;,
-    &quot;Application.teste.executor&quot;: &quot;Run&quot;,
-    &quot;Application.testeLexico.executor&quot;: &quot;Run&quot;,
-    &quot;Application.testeTAD_Lista.executor&quot;: &quot;Run&quot;,
-    &quot;Application.timeDuendes.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;ShowUsagesActions.previewPropertyKey&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/berd/IdeaProjects/javatoso/src/labs/lab04&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "Application.AlfabetoAlienigena.executor": "Debug",
+    "Application.Eletricidade.executor": "Run",
+    "Application.EtiquetasNoel.executor": "Debug",
+    "Application.FilaSus.executor": "Run",
+    "Application.ListaCriancasPapaiNoel.executor": "Run",
+    "Application.ListaNova.executor": "Debug",
+    "Application.Main.executor": "Run",
+    "Application.MenorPilha.executor": "Run",
+    "Application.MenorPilhaRapido.executor": "Run",
+    "Application.Pokemon.executor": "Run",
+    "Application.PontosFeno.executor": "Run",
+    "Application.PresentesNoel.executor": "Run",
+    "Application.QuadroMedalhas.executor": "Run",
+    "Application.QuickSortSeuPivo.executor": "Run",
+    "Application.ReadCSV.executor": "Run",
+    "Application.SequenciaSecreta.executor": "Run",
+    "Application.VogaisAlienigenas.executor": "Run",
+    "Application.alarmeDespertador.executor": "Run",
+    "Application.algbool.executor": "Debug",
+    "Application.algebraRecursiva.executor": "Debug",
+    "Application.arquivo.executor": "Run",
+    "Application.ciframentoCesarRecursivo.executor": "Run",
+    "Application.dicionarioAndy.executor": "Run",
+    "Application.ex03_PesquisaSequencial.executor": "Run",
+    "Application.ex05_OrdenacaoSelecao.executor": "Run",
+    "Application.ex07_OrdenacaoInsercao.executor": "Run",
+    "Application.jogandoCartasFora.executor": "Run",
+    "Application.leituraHtml.executor": "Run",
+    "Application.listanova.executor": "Run",
+    "Application.ordenacaoTamanho.executor": "Run",
+    "Application.sig.executor": "Run",
+    "Application.sort.executor": "Debug",
+    "Application.tecladoQuebrado.executor": "Debug",
+    "Application.tecladoQuebradoRapido.executor": "Run",
+    "Application.teste.executor": "Run",
+    "Application.testeLexico.executor": "Run",
+    "Application.testeTAD_Lista.executor": "Run",
+    "Application.timeDuendes.executor": "Run",
+    "Application.unificado.executor": "Run",
+    "Python.desempenhoBarras.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "ShowUsagesActions.previewPropertyKey": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/tps/tp2/ex04_PesquisaBinaria",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex04_PesquisaBinaria" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2" />
       <recent name="$PROJECT_DIR$/src/labs/lab04" />
       <recent name="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML" />
       <recent name="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/exercicios/beecrowd/TecladoQuebrado" />
-      <recent name="$PROJECT_DIR$/src/exercicios/beecrowd/TimeDuendes" />
-      <recent name="$PROJECT_DIR$/src/exercicios/beecrowd/QuadroMedalhas" />
-      <recent name="$PROJECT_DIR$/src/exercicios/beecrowd/ListaCriancasPapaiNoel" />
-      <recent name="$PROJECT_DIR$/src/exercicios/beecrowd/OrdenacaoTamanho" />
+      <recent name="$PROJECT_DIR$/src/labs/lab06" />
+      <recent name="$PROJECT_DIR$/src/labs/lab05" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/unificadoVerde" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="exercicios.beecrowd" />
@@ -147,6 +154,19 @@
     </key>
   </component>
   <component name="RunManager">
+    <configuration name="ex05_OrdenacaoSelecao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tps.tp2.ex05_OrdenacaoSelecao.ex05_OrdenacaoSelecao" />
+      <module name="javatoso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tps.tp2.ex05_OrdenacaoSelecao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="teste" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="teste" />
       <module name="javatoso" />
@@ -156,6 +176,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ex05_OrdenacaoSelecao" />
         <item itemvalue="Application.teste" />
       </list>
     </recent_temporary>
@@ -163,8 +184,8 @@
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
-        <option value="bundled-jdk-9823dce3aa75-b114ca120d71-intellij.indexing.shared.core-IU-242.21829.142" />
-        <option value="bundled-js-predefined-d6986cc7102b-7c0b70fcd90d-JavaScript-IU-242.21829.142" />
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23339.11" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23339.11" />
       </set>
     </attachedChunks>
   </component>
@@ -196,7 +217,12 @@
       <workItem from="1725892039257" duration="1694000" />
       <workItem from="1725990745030" duration="2126000" />
       <workItem from="1726145793324" duration="60449000" />
-      <workItem from="1726748961597" duration="6555000" />
+      <workItem from="1726748961597" duration="25085000" />
+      <workItem from="1727354978277" duration="8917000" />
+      <workItem from="1727877297152" duration="9045000" />
+      <workItem from="1727978700741" duration="2005000" />
+      <workItem from="1728056044459" duration="3274000" />
+      <workItem from="1728397086639" duration="3744000" />
     </task>
     <servers />
   </component>
@@ -266,5 +292,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/aeds2$desempenhoBarras.coverage" NAME="desempenhoBarras Coverage Results" MODIFIED="1728399438861" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/labs/lab06" />
   </component>
 </project>

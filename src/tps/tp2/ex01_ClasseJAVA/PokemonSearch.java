@@ -1,4 +1,4 @@
-package tps.tp2;
+package tps.tp2.ex01_ClasseJAVA;
 
 import java.util.List;
 
