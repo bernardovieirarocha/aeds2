@@ -1,7 +1,8 @@
-package tps.tp2.ex01_ClasseJAVA.envioVerde;
+package tps.tp2.ex13_OrdenacaoMergeSort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,29 +11,32 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-@SuppressWarnings("WrongPackageStatement")
-public class Main {
-
-    // Funcao principal de leitura do IDs
+public class ex13_OrdenacaoMergeSort {
     public static void main(String[] args) {
         List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
         List<Pokemon> pokedex = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
         String string_entrada;
-        int id_entrada = 0;
+        int id_entrada;
 
         while (!(string_entrada = sc.nextLine()).equals("FIM")) {
             id_entrada = Integer.parseInt(string_entrada);
-            pokedex.add(PokemonSearch.searchPokemonId(pokemons, id_entrada));
+            pokedex.add(PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada));
         }
+
+        MyLog.startTimer();
+        PokemonSearch.mergeSort(pokedex, 0, pokedex.size() - 1);
+        MyLog.endTimer();
 
         for (Pokemon pokemon : pokedex) {
             System.out.println(pokemon);
         }
 
+        MyLog.createLog("853733", "mergesort");
     }
 }
+
 
 class Pokemon {
 
@@ -243,6 +247,53 @@ class Pokemon {
 
 }
 
+class MyLog {
+
+    // Variaveis "globais"
+    private static long startTime = 0;
+    private static long endTime = 0;
+    private static int totalComp = 0;
+    private static int totalMove = 0;
+
+    // Função para regular comparações
+    static void countComp(int x){
+        totalComp += x;
+    }
+
+    // Função para regular movimentações
+    static void countMove(int x){
+        totalMove += x;
+    }
+
+    // Função para começar o cronometro
+    public static void startTimer() {
+        startTime = System.currentTimeMillis();
+    }
+
+    // Função para encerrar o cronometro
+    public static void endTimer() {
+        endTime = System.currentTimeMillis();
+    }
+
+    // Função para calcular o tempo gasto
+    static long getTime() {
+        return endTime - startTime;
+    }
+
+    // Função para criar o txt contendo as informações de comparações e tempo
+    public static void createLog(final String matricula, final String metodo) {
+        try {
+            FileWriter logArq = new FileWriter(matricula + "_" + metodo +".txt");
+            logArq.write(matricula + "\t" + getTime() + "\t" + totalComp + "\t" + totalMove + "\n");
+            logArq.close();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao criar txt");
+        }
+    }
+}
+
 class ReadCSV {
 
     // Funcao para ler o arquivo CSV e retornar uma lista de Pokemons
@@ -282,15 +333,95 @@ class ReadCSV {
 
 }
 
-
 class PokemonSearch {
     // Funcao estatica que busca um Pokemon pelo ID
-    public static Pokemon searchPokemonId(List<Pokemon> pokemons, int id) {
+    public static Pokemon searchPokemonIdSequential(List<Pokemon> pokemons, int id) {
         for (Pokemon pokemon : pokemons) {
             if (pokemon.getId() == id) {
                 return pokemon;
             }
         }
         return null;
+    }
+
+    // Função para realizar o MergeSort
+    public static void mergeSort(List<Pokemon> pokemons, int left, int right) {
+        if (left < right) {
+            int middle = (left + right) / 2;
+
+            // Dividir a lista em duas metades
+            mergeSort(pokemons, left, middle);
+            mergeSort(pokemons, middle + 1, right);
+
+            // Mesclar as duas metades
+            merge(pokemons, left, middle, right);
+        }
+    }
+
+    // Função auxiliar para mesclar duas metades ordenadas
+    private static void merge(List<Pokemon> pokemons, int left, int middle, int right) {
+        int n1 = middle - left + 1;
+        int n2 = right - middle;
+
+        // Criar arrays temporários
+        List<Pokemon> leftArray = new ArrayList<>(n1);
+        List<Pokemon> rightArray = new ArrayList<>(n2);
+
+        // Copiar os dados para os arrays temporários
+        for (int i = 0; i < n1; ++i)
+            leftArray.add(pokemons.get(left + i));
+        for (int j = 0; j < n2; ++j)
+            rightArray.add(pokemons.get(middle + 1 + j));
+
+        // Índices iniciais das duas metades
+        int i = 0, j = 0;
+
+        // Índice inicial da lista mesclada
+        int k = left;
+        while (i < n1 && j < n2) {
+            MyLog.countComp(1); // Contar comparação
+
+            // Comparar primeiro pelos tipos, em caso de empate, pelo nome
+            if (comparePokemons(leftArray.get(i), rightArray.get(j)) <= 0) {
+                pokemons.set(k, leftArray.get(i));
+                i++;
+            } else {
+                pokemons.set(k, rightArray.get(j));
+                j++;
+            }
+            MyLog.countMove(1); // Contar movimentação
+            k++;
+        }
+
+        // Copiar os elementos restantes de leftArray, se houver
+        while (i < n1) {
+            pokemons.set(k, leftArray.get(i));
+            i++;
+            k++;
+            MyLog.countMove(1); // Contar movimentação
+        }
+
+        // Copiar os elementos restantes de rightArray, se houver
+        while (j < n2) {
+            pokemons.set(k, rightArray.get(j));
+            j++;
+            k++;
+            MyLog.countMove(1); // Contar movimentação
+        }
+    }
+
+    // Função de comparação entre dois Pokémons
+    private static int comparePokemons(Pokemon p1, Pokemon p2) {
+        // Comparar pelos tipos
+        String type1P1 = p1.getTypes().get(0); // Considerando que o tipo 1 sempre existe
+        String type1P2 = p2.getTypes().get(0);
+
+        int compareTypes = type1P1.compareTo(type1P2);
+        if (compareTypes != 0) {
+            return compareTypes; // Retorna se os tipos forem diferentes
+        }
+
+        // Em caso de empate nos tipos, comparar pelo nome
+        return p1.getName().compareTo(p2.getName());
     }
 }

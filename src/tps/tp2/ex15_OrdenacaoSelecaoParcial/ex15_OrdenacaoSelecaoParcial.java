@@ -1,8 +1,5 @@
-package tps.tp2.ex01_ClasseJAVA.envioVerde;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -10,10 +7,7 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-@SuppressWarnings("WrongPackageStatement")
-public class Main {
-
-    // Funcao principal de leitura do IDs
+public class ex15_OrdenacaoSelecaoParcial {
     public static void main(String[] args) {
         List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
         List<Pokemon> pokedex = new ArrayList<>();
@@ -22,17 +16,30 @@ public class Main {
         String string_entrada;
         int id_entrada = 0;
 
+
         while (!(string_entrada = sc.nextLine()).equals("FIM")) {
             id_entrada = Integer.parseInt(string_entrada);
-            pokedex.add(PokemonSearch.searchPokemonId(pokemons, id_entrada));
+            pokedex.add(PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada));
         }
 
-        for (Pokemon pokemon : pokedex) {
-            System.out.println(pokemon);
+        MyLog.startTimer();
+        int k = 10;
+        PokemonSearch.ordenarSelecaoPorNomeParcial(pokedex, k);
+        MyLog.endTimer();
+
+        // Mostrar somente os 10 primeiros
+        for (int i = 0; i < k; i++) {
+            System.out.println(pokedex.get(i));
         }
+
+
+        MyLog.createLog("853733", "selecaoParcial");
+
 
     }
 }
+
+
 
 class Pokemon {
 
@@ -282,15 +289,81 @@ class ReadCSV {
 
 }
 
-
 class PokemonSearch {
+    public static int comparacoes;
+
     // Funcao estatica que busca um Pokemon pelo ID
-    public static Pokemon searchPokemonId(List<Pokemon> pokemons, int id) {
+    public static Pokemon searchPokemonIdSequential(List<Pokemon> pokemons, int id) {
         for (Pokemon pokemon : pokemons) {
+            MyLog.countComp(1);
             if (pokemon.getId() == id) {
                 return pokemon;
             }
         }
         return null;
+    }
+
+    public static void ordenarSelecaoPorNomeParcial(List<Pokemon> pokedex, int k) {
+        for (int i = 0; i < k; i++) {
+            int menor = i;
+            for (int j = i + 1; j < pokedex.size(); j++) {
+                MyLog.countComp(1);
+                if (pokedex.get(j).getName().compareTo(pokedex.get(menor).getName()) < 0) {
+                    menor = j;
+                }
+            }
+            Pokemon aux = pokedex.get(i);
+            pokedex.set(i, pokedex.get(menor));
+            pokedex.set(menor, aux);
+            MyLog.countMove(3);
+        }
+
+    }}
+
+
+class MyLog {
+
+    // Variaveis "globais"
+    private static long startTime = 0;
+    private static long endTime = 0;
+    private static int totalComp = 0;
+    private static int totalMove = 0;
+
+    // Função para regular comparações
+    static void countComp(int x){
+        totalComp += x;
+    }
+
+    // Função para regular movimentações
+    static void countMove(int x){
+        totalMove += x;
+    }
+
+    // Função para começar o cronometro
+    public static void startTimer() {
+        startTime = System.currentTimeMillis();
+    }
+
+    // Função para encerrar o cronometro
+    public static void endTimer() {
+        endTime = System.currentTimeMillis();
+    }
+
+    // Função para calcular o tempo gasto
+    static long getTime() {
+        return endTime - startTime;
+    }
+
+    // Função para criar o txt contendo as informações de comparações e tempo
+    public static void createLog(final String matricula, final String metodo) {
+        try {
+            FileWriter logArq = new FileWriter(matricula + "_" + metodo +".txt");
+            logArq.write(matricula + "\t" + getTime() + "\t" + totalComp + "\t" + totalMove + "\n");
+            logArq.close();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao criar txt");
+        }
     }
 }

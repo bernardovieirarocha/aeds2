@@ -1,8 +1,5 @@
-package tps.tp2.ex01_ClasseJAVA.envioVerde;
-
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+package tps.tp2.ex17_OrdenacaoHeapSortParcial;
+import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -10,29 +7,33 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-@SuppressWarnings("WrongPackageStatement")
-public class Main {
-
-    // Funcao principal de leitura do IDs
+public class ex17_OrdenacaoHeapSortParcial {
     public static void main(String[] args) {
         List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
         List<Pokemon> pokedex = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
         String string_entrada;
-        int id_entrada = 0;
+        int id_entrada;
 
         while (!(string_entrada = sc.nextLine()).equals("FIM")) {
             id_entrada = Integer.parseInt(string_entrada);
-            pokedex.add(PokemonSearch.searchPokemonId(pokemons, id_entrada));
+            pokedex.add(PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada));
         }
 
-        for (Pokemon pokemon : pokedex) {
-            System.out.println(pokemon);
+        MyLog.startTimer();
+        int k = 10;
+        PokemonSearch.ordenarHeapsortParcial(pokedex,k);
+        MyLog.endTimer();
+
+        for (int i = 0; i < k; i++) {
+            System.out.println(pokedex.get(i));
         }
 
+        MyLog.createLog("853733", "heapsortParcial");
     }
 }
+
 
 class Pokemon {
 
@@ -243,6 +244,7 @@ class Pokemon {
 
 }
 
+
 class ReadCSV {
 
     // Funcao para ler o arquivo CSV e retornar uma lista de Pokemons
@@ -284,13 +286,115 @@ class ReadCSV {
 
 
 class PokemonSearch {
+
     // Funcao estatica que busca um Pokemon pelo ID
-    public static Pokemon searchPokemonId(List<Pokemon> pokemons, int id) {
+    public static Pokemon searchPokemonIdSequential(List<Pokemon> pokemons, int id) {
         for (Pokemon pokemon : pokemons) {
             if (pokemon.getId() == id) {
                 return pokemon;
             }
         }
         return null;
+    }
+
+    public static void ordenarHeapsortParcial(List<Pokemon> pokedex, int k) {
+        int n = pokedex.size();
+
+        // Build heap (rearrange array)
+        for (int i = k / 2 - 1; i >= 0; i--) {
+            heapify(pokedex, k, i);
+        }
+
+        // One by one extract an element from heap
+        for (int i = k - 1; i > 0; i--) {
+            // Move current root to end
+            Pokemon temp = pokedex.get(0);
+            pokedex.set(0, pokedex.get(i));
+            pokedex.set(i, temp);
+            MyLog.countMove(3); // Incrementa ao mover elementos
+
+            // call max heapify on the reduced heap
+            heapify(pokedex, i, 0);
+        }
+    }
+
+    private static void heapify(List<Pokemon> pokedex, int n, int i) {
+        int largest = i; // Initialize largest as root
+        int left = 2 * i + 1; // left = 2*i + 1
+        int right = 2 * i + 2; // right = 2*i + 2
+
+        MyLog.countComp(2); // Incrementa ao comparar elementos
+        // If left child is larger than root
+        if (left < n && (pokedex.get(left).getHeight() > pokedex.get(largest).getHeight() ||
+                (pokedex.get(left).getHeight() == pokedex.get(largest).getHeight() &&
+                        pokedex.get(left).getName().compareTo(pokedex.get(largest).getName()) > 0))) {
+            largest = left;
+        }
+        // If right child is larger than largest so far
+        if (right < n && (pokedex.get(right).getHeight() > pokedex.get(largest).getHeight() ||
+                (pokedex.get(right).getHeight() == pokedex.get(largest).getHeight() &&
+                        pokedex.get(right).getName().compareTo(pokedex.get(largest).getName()) > 0))) {
+            largest = right;
+        }
+
+        // If largest is not root
+        if (largest != i) {
+            Pokemon swap = pokedex.get(i);
+            pokedex.set(i, pokedex.get(largest));
+            pokedex.set(largest, swap);
+            MyLog.countMove(3); // Incrementa ao mover elementos
+
+            // Recursively heapify the affected sub-tree
+            heapify(pokedex, n, largest);
+        }
+    }
+
+}
+
+
+class MyLog {
+
+    // Variaveis "globais"
+    private static long startTime = 0;
+    private static long endTime = 0;
+    private static int totalComp = 0;
+    private static int totalMove = 0;
+
+    // Função para regular comparações
+    static void countComp(int x){
+        totalComp += x;
+    }
+
+    // Função para regular movimentações
+    static void countMove(int x){
+        totalMove += x;
+    }
+
+    // Função para começar o cronometro
+    public static void startTimer() {
+        startTime = System.currentTimeMillis();
+    }
+
+    // Função para encerrar o cronometro
+    public static void endTimer() {
+        endTime = System.currentTimeMillis();
+    }
+
+    // Função para calcular o tempo gasto
+    static long getTime() {
+        return endTime - startTime;
+    }
+
+    // Função para criar o txt contendo as informações de comparações e tempo
+    public static void createLog(final String matricula, final String metodo) {
+        try {
+            FileWriter logArq = new FileWriter(matricula + "_" + metodo +".txt");
+            logArq.write(matricula + "\t" + getTime() + "\t" + totalComp + "\t" + totalMove + "\n");
+            logArq.close();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao criar txt");
+        }
     }
 }

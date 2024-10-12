@@ -1,6 +1,6 @@
-package tps.tp2.ex01_ClasseJAVA.envioVerde;
-
+package  tps.tp2.ex09_OrdenacaoHeapsort;
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.FileReader;
 import java.io.IOException;
 import java.text.ParseException;
@@ -10,29 +10,42 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-@SuppressWarnings("WrongPackageStatement")
-public class Main {
-
-    // Funcao principal de leitura do IDs
+public class ex09_OrdenacaoHeapSort {
     public static void main(String[] args) {
         List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
         List<Pokemon> pokedex = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
         String string_entrada;
-        int id_entrada = 0;
+        int id_entrada;
 
+        long startTime = System.currentTimeMillis();
         while (!(string_entrada = sc.nextLine()).equals("FIM")) {
             id_entrada = Integer.parseInt(string_entrada);
-            pokedex.add(PokemonSearch.searchPokemonId(pokemons, id_entrada));
+            pokedex.add(PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada));
         }
+
+        PokemonSearch.ordenarHeapsort(pokedex);
+
+        long endTime = System.currentTimeMillis();
+        long executionTime = (endTime - startTime);
 
         for (Pokemon pokemon : pokedex) {
             System.out.println(pokemon);
         }
 
+        try {
+            String matricula = "853733";
+            String logFileName = matricula + "_heapsort.txt";
+            BufferedWriter logFile = new BufferedWriter(new java.io.FileWriter(logFileName));
+            logFile.write("853733\t" + executionTime + "\t" + PokemonSearch.comparacoes + "\t" + PokemonSearch.movimentacoes);
+            logFile.close();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
     }
 }
+
 
 class Pokemon {
 
@@ -243,6 +256,7 @@ class Pokemon {
 
 }
 
+
 class ReadCSV {
 
     // Funcao para ler o arquivo CSV e retornar uma lista de Pokemons
@@ -284,13 +298,73 @@ class ReadCSV {
 
 
 class PokemonSearch {
+    public static int comparacoes;
+    public static int movimentacoes;
     // Funcao estatica que busca um Pokemon pelo ID
-    public static Pokemon searchPokemonId(List<Pokemon> pokemons, int id) {
+    public static Pokemon searchPokemonIdSequential(List<Pokemon> pokemons, int id) {
         for (Pokemon pokemon : pokemons) {
+            comparacoes++;
             if (pokemon.getId() == id) {
                 return pokemon;
             }
         }
         return null;
     }
+
+    public static void ordenarHeapsort(List<Pokemon> pokedex) {
+        int n = pokedex.size();
+
+        // Build heap (rearrange array)
+        for (int i = n / 2 - 1; i >= 0; i--) {
+            heapify(pokedex, n, i);
+        }
+
+        // One by one extract an element from heap
+        for (int i = n - 1; i > 0; i--) {
+            // Move current root to end
+            Pokemon temp = pokedex.get(0);
+            pokedex.set(0, pokedex.get(i));
+            pokedex.set(i, temp);
+            PokemonSearch.movimentacoes += 3; // Incrementa ao mover elementos
+
+            // call max heapify on the reduced heap
+            heapify(pokedex, i, 0);
+        }
+    }
+
+    private static void heapify(List<Pokemon> pokedex, int n, int i) {
+        int largest = i; // Initialize largest as root
+        int left = 2 * i + 1; // left = 2*i + 1
+        int right = 2 * i + 2; // right = 2*i + 2
+
+        PokemonSearch.comparacoes++;
+        // If left child is larger than root
+        if (left < n && (pokedex.get(left).getHeight() > pokedex.get(largest).getHeight() ||
+                (pokedex.get(left).getHeight() == pokedex.get(largest).getHeight() &&
+                        pokedex.get(left).getName().compareTo(pokedex.get(largest).getName()) > 0))) {
+            largest = left;
+        }
+
+        PokemonSearch.comparacoes++;
+        // If right child is larger than largest so far
+        if (right < n && (pokedex.get(right).getHeight() > pokedex.get(largest).getHeight() ||
+                (pokedex.get(right).getHeight() == pokedex.get(largest).getHeight() &&
+                        pokedex.get(right).getName().compareTo(pokedex.get(largest).getName()) > 0))) {
+            largest = right;
+        }
+
+        // If largest is not root
+        if (largest != i) {
+            Pokemon swap = pokedex.get(i);
+            pokedex.set(i, pokedex.get(largest));
+            pokedex.set(largest, swap);
+            PokemonSearch.movimentacoes += 3; // Incrementa ao mover elementos
+            
+            // Recursively heapify the affected sub-tree
+            heapify(pokedex, n, largest);
+        }
+        }
+
+
+
 }

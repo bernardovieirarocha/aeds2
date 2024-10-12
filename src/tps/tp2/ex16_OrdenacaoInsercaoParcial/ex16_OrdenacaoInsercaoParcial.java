@@ -1,8 +1,6 @@
-package tps.tp2.ex01_ClasseJAVA.envioVerde;
+package tps.tp2.ex16_OrdenacaoInsercaoParcial;
 
-import java.io.BufferedReader;
-import java.io.FileReader;
-import java.io.IOException;
+import java.io.*;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -10,26 +8,30 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-@SuppressWarnings("WrongPackageStatement")
-public class Main {
-
-    // Funcao principal de leitura do IDs
+public class ex16_OrdenacaoInsercaoParcial {
     public static void main(String[] args) {
         List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
         List<Pokemon> pokedex = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
         String string_entrada;
-        int id_entrada = 0;
+        int id_entrada;
 
         while (!(string_entrada = sc.nextLine()).equals("FIM")) {
             id_entrada = Integer.parseInt(string_entrada);
-            pokedex.add(PokemonSearch.searchPokemonId(pokemons, id_entrada));
+            pokedex.add(PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada));
         }
 
-        for (Pokemon pokemon : pokedex) {
-            System.out.println(pokemon);
+        MyLog.startTimer();
+        int k = 10;
+        PokemonSearch.ordenarPorInsercaoParcial(pokedex,k);
+        MyLog.endTimer();
+
+        for (int i = 0; i < k; i++) {
+            System.out.println(pokedex.get(i));
         }
+
+        MyLog.createLog("853733", "insercaoParcial");
 
     }
 }
@@ -282,15 +284,85 @@ class ReadCSV {
 
 }
 
-
 class PokemonSearch {
+
     // Funcao estatica que busca um Pokemon pelo ID
-    public static Pokemon searchPokemonId(List<Pokemon> pokemons, int id) {
+    public static Pokemon searchPokemonIdSequential(List<Pokemon> pokemons, int id) {
         for (Pokemon pokemon : pokemons) {
             if (pokemon.getId() == id) {
                 return pokemon;
             }
         }
         return null;
+    }
+
+
+    public static void ordenarPorInsercaoParcial(List<Pokemon> pokedex, int k) {
+        //  Chave de pesquisa seja o atributo nome de forma Parcial (k)
+        for (int i = 1; i < k; i++) {
+            Pokemon key = pokedex.get(i);
+            int j = i - 1;
+
+            while (j >= 0 && (pokedex.get(j).getName() == null ||
+                    (key.getName() != null && pokedex.get(j).getName().compareTo(key.getName()) > 0))) {
+                MyLog.countComp(1);
+                pokedex.set(j + 1, pokedex.get(j));
+                j = j - 1;
+                MyLog.countMove(1);
+            }
+            if (j >= 0) {
+                MyLog.countComp(1);
+            }
+            pokedex.set(j + 1, key);
+            MyLog.countMove(1);
+        }
+    }
+}
+
+
+class MyLog {
+
+    // Variaveis "globais"
+    private static long startTime = 0;
+    private static long endTime = 0;
+    private static int totalComp = 0;
+    private static int totalMove = 0;
+
+    // Função para regular comparações
+    static void countComp(int x){
+        totalComp += x;
+    }
+
+    // Função para regular movimentações
+    static void countMove(int x){
+        totalMove += x;
+    }
+
+    // Função para começar o cronometro
+    public static void startTimer() {
+        startTime = System.currentTimeMillis();
+    }
+
+    // Função para encerrar o cronometro
+    public static void endTimer() {
+        endTime = System.currentTimeMillis();
+    }
+
+    // Função para calcular o tempo gasto
+    static long getTime() {
+        return endTime - startTime;
+    }
+
+    // Função para criar o txt contendo as informações de comparações e tempo
+    public static void createLog(final String matricula, final String metodo) {
+        try {
+            FileWriter logArq = new FileWriter(matricula + "_" + metodo +".txt");
+            logArq.write(matricula + "\t" + getTime() + "\t" + totalComp + "\t" + totalMove + "\n");
+            logArq.close();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao criar txt");
+        }
     }
 }

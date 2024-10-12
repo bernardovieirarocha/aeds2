@@ -1,7 +1,8 @@
-package tps.tp2.ex01_ClasseJAVA.envioVerde;
+package tps.tp2.ex11_OrdenacaoCoutingSort;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
+import java.io.FileWriter;
 import java.io.IOException;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -10,29 +11,32 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-@SuppressWarnings("WrongPackageStatement")
-public class Main {
-
-    // Funcao principal de leitura do IDs
+public class ex11_OrdenacaoCoutingSort {
     public static void main(String[] args) {
         List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
         List<Pokemon> pokedex = new ArrayList<>();
 
         Scanner sc = new Scanner(System.in);
         String string_entrada;
-        int id_entrada = 0;
+        int id_entrada;
 
         while (!(string_entrada = sc.nextLine()).equals("FIM")) {
             id_entrada = Integer.parseInt(string_entrada);
-            pokedex.add(PokemonSearch.searchPokemonId(pokemons, id_entrada));
+            pokedex.add(PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada));
         }
+
+        MyLog.startTimer();
+        PokemonSearch.countingSort(pokedex);
+        MyLog.endTimer();
 
         for (Pokemon pokemon : pokedex) {
             System.out.println(pokemon);
         }
 
+        MyLog.createLog("853733", "countingsort");
     }
 }
+
 
 class Pokemon {
 
@@ -243,6 +247,53 @@ class Pokemon {
 
 }
 
+class MyLog {
+
+    // Variaveis "globais"
+    private static long startTime = 0;
+    private static long endTime = 0;
+    private static int totalComp = 0;
+    private static int totalMove = 0;
+
+    // Função para regular comparações
+    static void countComp(int x){
+        totalComp += x;
+    }
+
+    // Função para regular movimentações
+    static void countMove(int x){
+        totalMove += x;
+    }
+
+    // Função para começar o cronometro
+    public static void startTimer() {
+        startTime = System.currentTimeMillis();
+    }
+
+    // Função para encerrar o cronometro
+    public static void endTimer() {
+        endTime = System.currentTimeMillis();
+    }
+
+    // Função para calcular o tempo gasto
+    static long getTime() {
+        return endTime - startTime;
+    }
+
+    // Função para criar o txt contendo as informações de comparações e tempo
+    public static void createLog(final String matricula, final String metodo) {
+        try {
+            FileWriter logArq = new FileWriter(matricula + "_" + metodo +".txt");
+            logArq.write(matricula + "\t" + getTime() + "\t" + totalComp + "\t" + totalMove + "\n");
+            logArq.close();
+        }
+        catch (Exception e) {
+            e.printStackTrace();
+            System.out.println("Erro ao criar txt");
+        }
+    }
+}
+
 class ReadCSV {
 
     // Funcao para ler o arquivo CSV e retornar uma lista de Pokemons
@@ -282,10 +333,9 @@ class ReadCSV {
 
 }
 
-
 class PokemonSearch {
     // Funcao estatica que busca um Pokemon pelo ID
-    public static Pokemon searchPokemonId(List<Pokemon> pokemons, int id) {
+    public static Pokemon searchPokemonIdSequential(List<Pokemon> pokemons, int id) {
         for (Pokemon pokemon : pokemons) {
             if (pokemon.getId() == id) {
                 return pokemon;
@@ -293,4 +343,93 @@ class PokemonSearch {
         }
         return null;
     }
+
+    // Função para realizar o Counting Sort
+
+    public static void countingSort(List<Pokemon> pokemons) {
+        if (pokemons == null || pokemons.isEmpty()) {
+            return;
+        }
+
+        // Encontrar o valor máximo de captureRate para determinar o tamanho do array de contagem
+        int maxCaptureRate = 0;
+        for (Pokemon pokemon : pokemons) {
+            if (pokemon.getCaptureRate() > maxCaptureRate) {
+                maxCaptureRate = pokemon.getCaptureRate();
+            }
+        }
+
+        // Inicializar o array de contagem
+        int[] count = new int[maxCaptureRate + 1];
+        List<Pokemon> output = new ArrayList<>(pokemons.size());
+
+        // Inicializar a lista de saída com valores nulos
+        for (int i = 0; i < pokemons.size(); i++) {
+            output.add(null);
+        }
+
+        // Armazenar a contagem de cada captureRate
+        for (Pokemon pokemon : pokemons) {
+            count[pokemon.getCaptureRate()]++;
+            MyLog.countComp(1); // Contando comparação
+        }
+
+        // Modificar count[i] para que contenha a posição real deste captureRate na lista de saída
+        for (int i = 1; i <= maxCaptureRate; i++) {
+            count[i] += count[i - 1];
+            MyLog.countMove(1); // Contando movimentação
+        }
+
+        // Construir a lista de saída, o Counting Sort garante que será estável
+        for (int i = pokemons.size() - 1; i >= 0; i--) {
+            Pokemon pokemon = pokemons.get(i);
+            output.set(count[pokemon.getCaptureRate()] - 1, pokemon);
+            count[pokemon.getCaptureRate()]--;
+            MyLog.countMove(1); // Contando movimentação
+        }
+
+        // Agora ordene apenas os elementos com o mesmo captureRate pelo nome
+        int currentCaptureRate = -1;
+        int start = 0;
+        for (int i = 0; i < output.size(); i++) {
+            if (output.get(i).getCaptureRate() != currentCaptureRate) {
+                if (i - start > 1) {
+                    // Ordenar entre start e i-1 por nome (desempate) usando insertion sort
+                    for (int j = start + 1; j < i; j++) {
+                        ordenarPorNome( output, start, j);
+                    }
+                }
+                currentCaptureRate = output.get(i).getCaptureRate();
+                start = i;
+            }
+        }
+
+
+        // Fazer a última ordenação se necessário
+        if (output.size() - start > 1) {
+            for (int j = start + 1; j < output.size(); j++) {
+                ordenarPorNome(output, start, j);
+            }
+        }
+
+
+        // Copiar os elementos ordenados de volta para a lista original
+        for (int i = 0; i < pokemons.size(); i++) {
+            pokemons.set(i, output.get(i));
+            MyLog.countMove(1); // Contando movimentação
+        }
+    }
+
+    private static void ordenarPorNome(List<Pokemon> output, int start, int j) {
+        Pokemon key = output.get(j);
+        int k = j - 1;
+        while (k >= start && output.get(k).getName().compareTo(key.getName()) > 0) {
+            output.set(k + 1, output.get(k));
+            k--;
+            MyLog.countMove(1); // Contando movimentação
+        }
+        output.set(k + 1, key);
+        MyLog.countMove(1); // Contando movimentação
+    }
+
 }

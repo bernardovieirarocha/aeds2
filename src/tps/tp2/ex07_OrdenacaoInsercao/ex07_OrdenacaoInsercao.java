@@ -21,6 +21,7 @@ public class ex07_OrdenacaoInsercao {
         int id_entrada;
 
         long startTime = System.currentTimeMillis();
+
         while (!(string_entrada = sc.nextLine()).equals("FIM")) {
             id_entrada = Integer.parseInt(string_entrada);
             pokedex.add(PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada));

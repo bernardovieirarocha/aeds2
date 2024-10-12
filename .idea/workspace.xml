@@ -5,24 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/labs/lab05/lab05.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab06/QuickSortSeuPivo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab06/desempenhoBarras.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/labs/lab06/lab06.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex03_PesquisaSequencial/ex03_PesquisaSequencial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex04_PesquisaBinaria/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex05_OrdenacaoSelecao/ex05_OrdenacaoSelecao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex07_OrdenacaoInsercao/ex07_OrdenacaoInsercao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex08_OrdenacaoShellSort/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex09_OrdenacaoHeapsort/ex09_OrdenacaoHeapSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex10_OrdenacaoQuickSort/ex10_OrdenacaoQuickSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex10_OrdenacaoQuickSort/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex11_OrdenacaoCoutingSort/ex11_OrdenacaoCoutingSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex12_OrdenacaoBolha/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex13_OrdenacaoMergeSort/ex13_OrdenacaoMergeSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex14_OrdenacaoRadixSort/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex15_OrdenacaoSelecaoParcial/ex15_OrdenacaoSelecaoParcial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex16_OrdenacaoInsercaoParcial/ex16_OrdenacaoInsercaoParcial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex17_OrdenacaoHeapSortParcial/ex17_OrdenacaoHeapSortParcial.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp2/ex18_OrdenacaoQuickSortParcial/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/javatoso.iml" beforeDir="false" afterPath="$PROJECT_DIR$/javatoso.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/Pokemon.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/Pokemon.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/PokemonSearch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/PokemonSearch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/ReadCSV.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/ReadCSV.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/sig" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex02_RegistroC/sig.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/labs/lab06_BernardoVieiraRocha.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/envioVerde/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/envioVerde/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex07_OrdenacaoInsercao/ex07_OrdenacaoInsercao.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex07_OrdenacaoInsercao/ex07_OrdenacaoInsercao.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,8 +35,8 @@
         <option value="module-info" />
         <option value="package-info" />
         <option value="Record" />
-        <option value="Class" />
         <option value="Python Script" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -67,80 +67,88 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AlfabetoAlienigena.executor": "Debug",
-    "Application.Eletricidade.executor": "Run",
-    "Application.EtiquetasNoel.executor": "Debug",
-    "Application.FilaSus.executor": "Run",
-    "Application.ListaCriancasPapaiNoel.executor": "Run",
-    "Application.ListaNova.executor": "Debug",
-    "Application.Main.executor": "Run",
-    "Application.MenorPilha.executor": "Run",
-    "Application.MenorPilhaRapido.executor": "Run",
-    "Application.Pokemon.executor": "Run",
-    "Application.PontosFeno.executor": "Run",
-    "Application.PresentesNoel.executor": "Run",
-    "Application.QuadroMedalhas.executor": "Run",
-    "Application.QuickSortSeuPivo.executor": "Run",
-    "Application.ReadCSV.executor": "Run",
-    "Application.SequenciaSecreta.executor": "Run",
-    "Application.VogaisAlienigenas.executor": "Run",
-    "Application.alarmeDespertador.executor": "Run",
-    "Application.algbool.executor": "Debug",
-    "Application.algebraRecursiva.executor": "Debug",
-    "Application.arquivo.executor": "Run",
-    "Application.ciframentoCesarRecursivo.executor": "Run",
-    "Application.dicionarioAndy.executor": "Run",
-    "Application.ex03_PesquisaSequencial.executor": "Run",
-    "Application.ex05_OrdenacaoSelecao.executor": "Run",
-    "Application.ex07_OrdenacaoInsercao.executor": "Run",
-    "Application.jogandoCartasFora.executor": "Run",
-    "Application.leituraHtml.executor": "Run",
-    "Application.listanova.executor": "Run",
-    "Application.ordenacaoTamanho.executor": "Run",
-    "Application.sig.executor": "Run",
-    "Application.sort.executor": "Debug",
-    "Application.tecladoQuebrado.executor": "Debug",
-    "Application.tecladoQuebradoRapido.executor": "Run",
-    "Application.teste.executor": "Run",
-    "Application.testeLexico.executor": "Run",
-    "Application.testeTAD_Lista.executor": "Run",
-    "Application.timeDuendes.executor": "Run",
-    "Application.unificado.executor": "Run",
-    "Python.desempenhoBarras.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ShowUsagesActions.previewPropertyKey": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/tps/tp2/ex04_PesquisaBinaria",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AlfabetoAlienigena.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Eletricidade.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EtiquetasNoel.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.FilaSus.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListaCriancasPapaiNoel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListaNova.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenorPilha.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenorPilhaRapido.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Pokemon.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PontosFeno.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PresentesNoel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuadroMedalhas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuickSortSeuPivo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReadCSV.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SequenciaSecreta.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VogaisAlienigenas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.alarmeDespertador.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algbool.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.algebraRecursiva.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.arquivo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ciframentoCesarRecursivo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.dicionarioAndy.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex03_PesquisaSequencial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex05_OrdenacaoSelecao.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex07_OrdenacaoInsercao.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex09_OrdenacaoHeapSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex10_OrdenacaoQuickSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex11_OrdenacaoCoutingSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex13_OrdenacaoMergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex15_OrdenacaoSelecaoParcial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex16_OrdenacaoInsercaoParcial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex17_OrdenacaoHeapSortParcial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.jogandoCartasFora.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leituraHtml.executor&quot;: &quot;Run&quot;,
+    &quot;Application.listanova.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ordenacaoTamanho.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sig.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sort.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.tecladoQuebrado.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.tecladoQuebradoRapido.executor&quot;: &quot;Run&quot;,
+    &quot;Application.teste.executor&quot;: &quot;Run&quot;,
+    &quot;Application.testeLexico.executor&quot;: &quot;Run&quot;,
+    &quot;Application.testeTAD_Lista.executor&quot;: &quot;Run&quot;,
+    &quot;Application.timeDuendes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.unificado.executor&quot;: &quot;Run&quot;,
+    &quot;Python.desempenhoBarras.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ShowUsagesActions.previewPropertyKey&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/berd/IdeaProjects/javatoso/src/tps/tp2/ex18_OrdenacaoQuickSortParcial&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/src/tps/tp2/ex04_PesquisaBinaria" />
-      <recent name="$PROJECT_DIR$/src/tps/tp2" />
-      <recent name="$PROJECT_DIR$/src/labs/lab04" />
-      <recent name="$PROJECT_DIR$/src/tps/tp1/ex07_leituraHTML" />
-      <recent name="$PROJECT_DIR$/src/tps/tp1/ex08_arquivoJava" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex18_OrdenacaoQuickSortParcial" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex17_OrdenacaoHeapSortParcial" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex16_OrdenacaoInsercaoParcial" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex14_OrdenacaoRadixSort" />
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex13_MergeSort" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tps/tp2/ex12_OrdenacaoBolha" />
       <recent name="$PROJECT_DIR$/src/labs/lab06" />
       <recent name="$PROJECT_DIR$/src/labs/lab05" />
       <recent name="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/unificadoVerde" />
       <recent name="$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA" />
-      <recent name="$PROJECT_DIR$/src/tps/tp2" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="exercicios.beecrowd" />
@@ -153,13 +161,33 @@
       <recent name="tps.tp1.leituraHTML_ex07" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ex05_OrdenacaoSelecao">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="javatoso" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ex05_OrdenacaoSelecao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="tps.tp2.ex05_OrdenacaoSelecao.ex05_OrdenacaoSelecao" />
       <module name="javatoso" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="tps.tp2.ex05_OrdenacaoSelecao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ex07_OrdenacaoInsercao" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="tps.tp2.ex07_OrdenacaoInsercao.ex07_OrdenacaoInsercao" />
+      <module name="javatoso" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="tps.tp2.ex07_OrdenacaoInsercao.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -176,6 +204,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.ex07_OrdenacaoInsercao" />
         <item itemvalue="Application.ex05_OrdenacaoSelecao" />
         <item itemvalue="Application.teste" />
       </list>
@@ -222,7 +252,9 @@
       <workItem from="1727877297152" duration="9045000" />
       <workItem from="1727978700741" duration="2005000" />
       <workItem from="1728056044459" duration="3274000" />
-      <workItem from="1728397086639" duration="3744000" />
+      <workItem from="1728397086639" duration="4328000" />
+      <workItem from="1728556069063" duration="3127000" />
+      <workItem from="1728560202950" duration="10787000" />
     </task>
     <servers />
   </component>
@@ -244,6 +276,15 @@
             <option name="WATCH_EXIT" value="false" />
           </properties>
           <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/tps/tp2/ex09_OrdenacaoHeapsort/ex09_OrdenacaoHeapSort.java</url>
+          <line>13</line>
+          <properties class="tps.tp2.ex09_OrdenacaoHeapsort.ex09_OrdenacaoHeapSort" method="main">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="132" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
@@ -289,6 +330,16 @@
           <url>file://$PROJECT_DIR$/src/exercicios/beecrowd/AlfabetoAlienigena/AlfabetoAlienigena.java</url>
           <line>14</line>
           <option name="timeStamp" value="119" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/envioVerde/Main.java</url>
+          <line>244</line>
+          <option name="timeStamp" value="123" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tps/tp2/ex01_ClasseJAVA/envioVerde/Main.java</url>
+          <line>245</line>
+          <option name="timeStamp" value="124" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
