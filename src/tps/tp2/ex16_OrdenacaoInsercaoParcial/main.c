@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <sys/time.h>
 
 // --- Estruturas de Dados
 struct types {
@@ -544,42 +545,40 @@ void addPokemonList(PokeList *pokeList, pokemon *poke) {
 }
 
 
-// Função para ordenar a lista de pokemons por id usando o algoritmo Radix Sort
+// ------ Funcoes para ordenar a lista de pokemons por captureDate usando o algoritmo Insercao de forma Parcial
 // Em caso de empate, ordenar por nome
 
-// Função para comparar a primeira habilidade de dois Pokémon
-int compareFirstAbility(const pokemon *a, const pokemon *b) {
-    char firstA[80], firstB[80];
-
-    // Extrair a primeira habilidade de cada Pokémon
-    sscanf(a->abilities, "['%[^']", firstA);
-    sscanf(b->abilities, "['%[^']", firstB);
-
-    // Comparar as primeiras habilidades
-    int cmp = strcmp(firstA, firstB);
-    if (cmp == 0) {
-        // Se as primeiras habilidades forem iguais, comparar os nomes
-        return strcmp(a->name, b->name);
-    }
-    return cmp;
+// Função para converter a data para um formato numérico (AAAAMMDD)
+int convertDateToComparable(const char *date) {
+    int day, month, year;
+    sscanf(date, "%d/%d/%d", &day, &month, &year);  // Extrair dia, mês e ano
+    return year * 10000 + month * 100 + day;  // Retornar como um número no formato AAAAMMDD
 }
 
-// Radix Sort Counting Sort
-void radixCoutingSort(PokeList* pokelist, int lenght) {
-  pokemon *output = (pokemon *)malloc(lenght * sizeof(pokemon));
-  for (int i = 0 ; i< lenght; i++) {
-    for (int j = 0; j < lenght; j++) {
-      if (compareFirstAbility(&pokelist->pokemon[i], &pokelist->pokemon[j]) < 0) {
-        pokemon aux = pokelist->pokemon[i];
-        pokelist->pokemon[i] = pokelist->pokemon[j];
-        pokelist->pokemon[j] = aux;
-      }
+// Função de comparação para datas e nomes
+int comparePokemon(const pokemon *a, const pokemon *b) {
+    int dateA = convertDateToComparable(a->captureDate);  // Converter data de a
+    int dateB = convertDateToComparable(b->captureDate);  // Converter data de b
+
+    if (dateA == dateB) {
+        return strcmp(a->name, b->name);  // Se as datas forem iguais, desempate por nome
     }
-  }
+    return dateA - dateB;  // Comparar as datas
 }
 
-void radixSort(PokeList *pokeList) {
-  radixCoutingSort(pokeList, pokeList->tamanho);
+// Função de ordenação por inserção para ordenar por data de captura e nome
+void insertionSort(PokeList *pokeList) {
+    for (int i = 1; i < pokeList->tamanho; i++) {
+        pokemon key = pokeList->pokemon[i];  // Pokémon a ser comparado
+        int j = i - 1;
+
+        // Mover elementos que são maiores que key para a frente
+        while (j >= 0 && comparePokemon(&pokeList->pokemon[j], &key) > 0) {
+            pokeList->pokemon[j + 1] = pokeList->pokemon[j];  // Deslocar
+            j = j - 1;
+        }
+        pokeList->pokemon[j + 1] = key;  // Inserir o Pokémon na posição correta
+    }
 }
 
 // ------- FIM DAS FUNCOES DE ORDENACAO
@@ -607,21 +606,21 @@ int main(void) {
   // Pegar o tempo de execução do programa
   clock_t start_time = clock();
 
-  
-  radixSort(pokeList);
-
+  // Insercao Parcial para ordenar a lista de pokemons
+  int k = 10;
+    insertionSort(pokeList);
   // Finaliza a medição do tempo
   clock_t end_time = clock();
   double execution_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
 
   // Printar a lista de pokemons ordenada
-  for (int i = 0; i < pokeList->tamanho; i++) {
+  for (int i = 0; i < k; i++) {
     printPokemon(&pokeList->pokemon[i]);
   }
 
   // Criar arquivo de log
   FILE *logFile;
-  logFile = fopen("853733_radixsort.txt", "w");
+  logFile = fopen("853733_insercaoParcial.txt", "w");
   if (logFile == NULL) {
     printf("Erro ao criar arquivo de log\n");
     return 1;

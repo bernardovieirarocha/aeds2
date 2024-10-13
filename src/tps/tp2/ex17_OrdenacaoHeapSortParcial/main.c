@@ -5,6 +5,7 @@
 #include <stdlib.h>
 #include <string.h>
 #include <time.h>
+#include <sys/time.h>
 
 // --- Estruturas de Dados
 struct types {
@@ -544,43 +545,53 @@ void addPokemonList(PokeList *pokeList, pokemon *poke) {
 }
 
 
-// Função para ordenar a lista de pokemons por id usando o algoritmo Radix Sort
+// ------ Funcoes para ordenar a lista de pokemons por height usando o algoritmo HeapSort de forma Parcial
 // Em caso de empate, ordenar por nome
-
-// Função para comparar a primeira habilidade de dois Pokémon
-int compareFirstAbility(const pokemon *a, const pokemon *b) {
-    char firstA[80], firstB[80];
-
-    // Extrair a primeira habilidade de cada Pokémon
-    sscanf(a->abilities, "['%[^']", firstA);
-    sscanf(b->abilities, "['%[^']", firstB);
-
-    // Comparar as primeiras habilidades
-    int cmp = strcmp(firstA, firstB);
-    if (cmp == 0) {
-        // Se as primeiras habilidades forem iguais, comparar os nomes
-        return strcmp(a->name, b->name);
-    }
-    return cmp;
+int compare(pokemon *a, pokemon *b) {
+  comparacoes++;
+  if (a->height == b->height) {
+    return strcmp(a->name, b->name);
+  }
+  return a->height > b->height;
 }
 
-// Radix Sort Counting Sort
-void radixCoutingSort(PokeList* pokelist, int lenght) {
-  pokemon *output = (pokemon *)malloc(lenght * sizeof(pokemon));
-  for (int i = 0 ; i< lenght; i++) {
-    for (int j = 0; j < lenght; j++) {
-      if (compareFirstAbility(&pokelist->pokemon[i], &pokelist->pokemon[j]) < 0) {
-        pokemon aux = pokelist->pokemon[i];
-        pokelist->pokemon[i] = pokelist->pokemon[j];
-        pokelist->pokemon[j] = aux;
-      }
-    }
+void swap(pokemon *a, pokemon *b) {
+  pokemon temp = *a;
+  *a = *b;
+  *b = temp;
+  movimentacoes++;
+}
+
+void heapiFy(PokeList *pokeList, int n, int i) {
+  int maior = i;
+  int l = 2 * i + 1;
+  int r = 2 * i + 2;
+
+  if (l < n && compare(&pokeList->pokemon[l], &pokeList->pokemon[maior])) {
+    maior = l;
+  }
+
+  if (r < n && compare(&pokeList->pokemon[r], &pokeList->pokemon[maior])) {
+    maior = r;
+  }
+
+  if (maior != i) {
+    swap(&pokeList->pokemon[i], &pokeList->pokemon[maior]);
+    heapiFy(pokeList, n, maior);
   }
 }
 
-void radixSort(PokeList *pokeList) {
-  radixCoutingSort(pokeList, pokeList->tamanho);
+void heapSort(PokeList *pokeList, int n ) {
+    for (int i = n / 2 - 1; i >= 0; i--) {
+        heapiFy(pokeList, n, i);
+    }
+    
+    for (int i = n - 1; i > 0; i--) {
+        swap(&pokeList->pokemon[0], &pokeList->pokemon[i]);
+        heapiFy(pokeList, i, 0);
+    }
 }
+
 
 // ------- FIM DAS FUNCOES DE ORDENACAO
 
@@ -607,21 +618,21 @@ int main(void) {
   // Pegar o tempo de execução do programa
   clock_t start_time = clock();
 
-  
-  radixSort(pokeList);
-
+  // HeapSort Parcial para ordenar a lista de pokemons
+  int k = 10;
+    heapSort(pokeList, k);
   // Finaliza a medição do tempo
   clock_t end_time = clock();
   double execution_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
 
   // Printar a lista de pokemons ordenada
-  for (int i = 0; i < pokeList->tamanho; i++) {
+  for (int i = 0; i < k; i++) {
     printPokemon(&pokeList->pokemon[i]);
   }
 
   // Criar arquivo de log
   FILE *logFile;
-  logFile = fopen("853733_radixsort.txt", "w");
+  logFile = fopen("853733_insercaoParcial.txt", "w");
   if (logFile == NULL) {
     printf("Erro ao criar arquivo de log\n");
     return 1;
