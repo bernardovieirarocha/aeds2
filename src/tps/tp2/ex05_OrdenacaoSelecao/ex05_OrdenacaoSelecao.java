@@ -39,7 +39,7 @@ public class ex05_OrdenacaoSelecao {
             String matricula = "853733";
             String logFileName = matricula + "_selecao.txt";
             BufferedWriter logFile = new BufferedWriter(new java.io.FileWriter(logFileName));
-            logFile.write("853733\t" + executionTime + "\t" + PokemonSearch.comparacoes);
+            logFile.write("853733\t" + executionTime + "\t" + PokemonSearch.comparacoes + "\t" + PokemonSearch.movimentacoes);
             logFile.close();
         } catch (Exception e) {
             throw new RuntimeException(e);
@@ -299,7 +299,7 @@ class ReadCSV {
 
 class PokemonSearch {
     public static int comparacoes;
-
+    public static int movimentacoes;
     // Funcao estatica que busca um Pokemon pelo ID
     public static Pokemon searchPokemonIdSequential(List<Pokemon> pokemons, int id) {
         for (Pokemon pokemon : pokemons) {
@@ -323,6 +323,7 @@ class PokemonSearch {
             Pokemon temp = pokedex.get(i);
             pokedex.set(i, pokedex.get(menor));
             pokedex.set(menor, temp);
+            movimentacoes++;
         }
 
     }}

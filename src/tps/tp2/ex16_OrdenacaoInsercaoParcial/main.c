@@ -560,7 +560,9 @@ int comparePokemon(const pokemon *a, const pokemon *b) {
     int dateA = convertDateToComparable(a->captureDate);  // Converter data de a
     int dateB = convertDateToComparable(b->captureDate);  // Converter data de b
 
+    comparacoes++;
     if (dateA == dateB) {
+        comparacoes++;
         return strcmp(a->name, b->name);  // Se as datas forem iguais, desempate por nome
     }
     return dateA - dateB;  // Comparar as datas
@@ -574,9 +576,11 @@ void insertionSort(PokeList *pokeList) {
 
         // Mover elementos que são maiores que key para a frente
         while (j >= 0 && comparePokemon(&pokeList->pokemon[j], &key) > 0) {
+            movimentacoes++;
             pokeList->pokemon[j + 1] = pokeList->pokemon[j];  // Deslocar
             j = j - 1;
         }
+        movimentacoes++;
         pokeList->pokemon[j + 1] = key;  // Inserir o Pokémon na posição correta
     }
 }
@@ -625,6 +629,7 @@ int main(void) {
     printf("Erro ao criar arquivo de log\n");
     return 1;
   }
+  
   // Escreve no formato: matrícula \t tempo de execução \t número de comparações
   fprintf(logFile, "853733\t%f\t%d\t%d\n", execution_time, comparacoes, movimentacoes);
   fclose(logFile);

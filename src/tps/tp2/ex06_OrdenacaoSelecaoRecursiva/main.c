@@ -40,6 +40,7 @@ struct PokeList {
 } typedef PokeList;
 
 int comparacoes = 0;
+int movimentacoes = 0;
 // --- FIM Estruturas de Dados
 
 // --- Biblioteca de Funções Auxiliares
@@ -564,6 +565,7 @@ void ordenarSelecaoRecursivaPokeListPorNome(PokeList *pokelist, int start) {
   pokemon temp = pokelist->pokemon[start];
   pokelist->pokemon[start] = pokelist->pokemon[min];
   pokelist->pokemon[min] = temp;
+  movimentacoes++;
   ordenarSelecaoRecursivaPokeListPorNome(pokelist, start + 1);
 }
 // Wrapper para a funcao de ordenacao recursiva
@@ -615,7 +617,7 @@ int main(void) {
     return 1;
   }
   // Escreve no formato: matrícula \t tempo de execução \t número de comparações
-  fprintf(logFile, "853733\t%.6f\t%d\n", execution_time, comparacoes);
+  fprintf(logFile, "853733\t%.6f\t%d\t%d\n", execution_time, comparacoes, movimentacoes);
   fclose(logFile);
 
   free(pokeList->pokemon);

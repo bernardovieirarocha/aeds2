@@ -314,20 +314,18 @@ class PokemonSearch {
     public static void ordenarHeapsort(List<Pokemon> pokedex) {
         int n = pokedex.size();
 
-        // Build heap (rearrange array)
+        // Constroi o heap (reorganiza o array)
         for (int i = n / 2 - 1; i >= 0; i--) {
             heapify(pokedex, n, i);
         }
 
-        // One by one extract an element from heap
         for (int i = n - 1; i > 0; i--) {
-            // Move current root to end
             Pokemon temp = pokedex.get(0);
             pokedex.set(0, pokedex.get(i));
             pokedex.set(i, temp);
             PokemonSearch.movimentacoes += 3; // Incrementa ao mover elementos
 
-            // call max heapify on the reduced heap
+            // chama na subárvore reduzida
             heapify(pokedex, i, 0);
         }
     }
@@ -338,7 +336,7 @@ class PokemonSearch {
         int right = 2 * i + 2; // right = 2*i + 2
 
         PokemonSearch.comparacoes++;
-        // If left child is larger than root
+        // Se o filho esquerdo for maior que a raiz
         if (left < n && (pokedex.get(left).getHeight() > pokedex.get(largest).getHeight() ||
                 (pokedex.get(left).getHeight() == pokedex.get(largest).getHeight() &&
                         pokedex.get(left).getName().compareTo(pokedex.get(largest).getName()) > 0))) {
@@ -346,21 +344,21 @@ class PokemonSearch {
         }
 
         PokemonSearch.comparacoes++;
-        // If right child is larger than largest so far
+        // Se o filho direito for maior que o maior até agora
         if (right < n && (pokedex.get(right).getHeight() > pokedex.get(largest).getHeight() ||
                 (pokedex.get(right).getHeight() == pokedex.get(largest).getHeight() &&
                         pokedex.get(right).getName().compareTo(pokedex.get(largest).getName()) > 0))) {
             largest = right;
         }
 
-        // If largest is not root
+       // se o maior não for a raiz
         if (largest != i) {
             Pokemon swap = pokedex.get(i);
             pokedex.set(i, pokedex.get(largest));
             pokedex.set(largest, swap);
             PokemonSearch.movimentacoes += 3; // Incrementa ao mover elementos
             
-            // Recursively heapify the affected sub-tree
+            // Recursivamente chama o heapify para o subárvore afetada
             heapify(pokedex, n, largest);
         }
         }

@@ -557,8 +557,10 @@ int compareFirstAbility(const pokemon *a, const pokemon *b) {
 
     // Comparar as primeiras habilidades
     int cmp = strcmp(firstA, firstB);
+    comparacoes++;
     if (cmp == 0) {
         // Se as primeiras habilidades forem iguais, comparar os nomes
+        comparacoes++;
         return strcmp(a->name, b->name);
     }
     return cmp;
@@ -570,6 +572,7 @@ void radixCoutingSort(PokeList* pokelist, int lenght) {
   for (int i = 0 ; i< lenght; i++) {
     for (int j = 0; j < lenght; j++) {
       if (compareFirstAbility(&pokelist->pokemon[i], &pokelist->pokemon[j]) < 0) {
+        movimentacoes++;
         pokemon aux = pokelist->pokemon[i];
         pokelist->pokemon[i] = pokelist->pokemon[j];
         pokelist->pokemon[j] = aux;
