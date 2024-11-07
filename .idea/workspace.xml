@@ -5,82 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ControladorVoo/ControladorVoo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/EstacionamentoLinear/EstacionamentoLinear.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/InfixaPosfixa/InfixaPosfixa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/OrganizacaoVagoes/OrganizacaoVagoes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TrilhosNovamente/TrilhosNovamenteTracandoMovimentos.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TrilhosNovamente/laura/TrilhosNovamente.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TrilhosNovamente/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/TrilhosNovamente/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/Van/Van.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/Van/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/matrizFlexivel/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/matrizFlexivel/Matriz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/matrizFlexivel/exercicioMax.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tads/Fila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tads/FilaCircular.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tads/Pilha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tadsFlexiveis/Celula.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tadsFlexiveis/Fila.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tadsFlexiveis/Pilha.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/pesquisa/PesquisaBinaria.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/pesquisa/PesquisaSequencial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provas/p1/pratica/C/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provas/p1/pratica/C/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provas/p1/pratica/C/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provas/p1/pratica/JAVA/image.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provas/p1/pratica/JAVA/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/provas/p1/pratica/JAVA/verdejava.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex01_ListaAlocacaoSequencial/ex01_ListaAlocacaoSequencial.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex03_PilhaAlocacaoSequencialC/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex03_PilhaAlocacaoSequencialC/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex04_FilaCircularSequencialC/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex04_FilaCircularSequencialC/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex04_FilaCircularSequencialC/pub.out" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/AmigosHabay/AmigosHabay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ElfoTrevas/ElfoTrevas.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ElfoTrevas/pub.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/Notas.md" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/Notas.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/P01Q01.java" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q01/P01Q01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/P01Q01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q01/P01Q01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/pub.in" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q01/pub.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q01/pub.out" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q01/pub.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/P01Q02.c" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q02/P01Q02.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/P01Q02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q02/P01Q02.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/pub.in" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q02/pub.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Prática/P01Q02/pub.out" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Prática/P01Q02/pub.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Teórica/Prova_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Teórica/Prova_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Teórica/Resp_Q1_Q2_Q3b.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Teórica/Resp_Q1_Q2_Q3b.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Teórica/Resp_Q3a.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Teórica/Resp_Q3a.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P1/Teórica/Resp_Q4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P1/Teórica/Resp_Q4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/P02Q01.java" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q01/P02Q01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/P02Q01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q01/P02Q01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/pub.in" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q01/pub.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q01/pub.out" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q01/pub.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/P02Q02.c" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q02/P02Q02.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/P02Q02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q02/P02Q02.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/pub.in" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q02/pub.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Prática/P02Q02/pub.out" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Prática/P02Q02/pub.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Teórica/Resp_Q1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Teórica/Resp_Q2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Teórica/Resp_Q3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P2/Teórica/Resp_Q4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P2/Teórica/Resp_Q4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/P03Q01.c" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q01/P03Q01.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/P03Q01.txt" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q01/P03Q01.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/pub.in" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q01/pub.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q01/pub.out" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q01/pub.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/P03Q02.java" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q02/P03Q02.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/P03Q02.txt" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q02/P03Q02.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/pub.in" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q02/pub.in" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Prática/P03Q02/pub.out" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Prática/P03Q02/pub.out" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Teórica/Resp_Q1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q2.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Teórica/Resp_Q2.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q3.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Teórica/Resp_Q3.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/provas/P3/Teórica/Resp_Q4.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/provasAntigas/P3/Teórica/Resp_Q4.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/tads/Lista.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tads/Lista.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/tads/ListaCustomizada.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tads/ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex17_OrdenacaoHeapSortParcial/853733_heapSortParcial.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex17_OrdenacaoHeapSortParcial/853733_heapSortParcial.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex17_OrdenacaoHeapSortParcial/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex17_OrdenacaoHeapSortParcial/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp2/ex18_OrdenacaoQuickSortParcial/ex18_OrdenacaoQuickSortParcial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp2/ex18_OrdenacaoQuickSortParcial/ex18_OrdenacaoQuickSortParcial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicios/beecrowd/ComoTreinarDragoes/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/beecrowd/ComoTreinarDragoes/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -125,88 +54,90 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.AlfabetoAlienigena.executor": "Debug",
-    "Application.ControladorVoo.executor": "Run",
-    "Application.Eletricidade.executor": "Run",
-    "Application.EstacionamentoLinear.executor": "Run",
-    "Application.EtiquetasNoel.executor": "Debug",
-    "Application.Fila.executor": "Run",
-    "Application.FilaSus.executor": "Run",
-    "Application.InfixaPosfixa.executor": "Run",
-    "Application.ListaCriancasPapaiNoel.executor": "Run",
-    "Application.ListaNova.executor": "Debug",
-    "Application.Main.executor": "Run",
-    "Application.MenorPilha.executor": "Run",
-    "Application.MenorPilhaRapido.executor": "Run",
-    "Application.OrganizacaoVagoes.executor": "Run",
-    "Application.PesquisaBinaria.executor": "Run",
-    "Application.PesquisaSequencial.executor": "Run",
-    "Application.Pilha.executor": "Debug",
-    "Application.Pokemon.executor": "Run",
-    "Application.PontosFeno.executor": "Run",
-    "Application.PresentesNoel.executor": "Run",
-    "Application.QuadroMedalhas.executor": "Run",
-    "Application.QuickSortSeuPivo.executor": "Run",
-    "Application.ReadCSV.executor": "Run",
-    "Application.SequenciaSecreta.executor": "Run",
-    "Application.TrilhosNovamente.executor": "Debug",
-    "Application.TrilhosNovamenteTracandoMovimentos.executor": "Debug",
-    "Application.Van.executor": "Run",
-    "Application.VogaisAlienigenas.executor": "Run",
-    "Application.alarmeDespertador.executor": "Run",
-    "Application.algbool.executor": "Debug",
-    "Application.algebraRecursiva.executor": "Debug",
-    "Application.arquivo.executor": "Run",
-    "Application.ciframentoCesarRecursivo.executor": "Run",
-    "Application.dicionarioAndy.executor": "Run",
-    "Application.ex01_ListaAlocacaoSequencial.executor": "Run",
-    "Application.ex03_PesquisaSequencial.executor": "Run",
-    "Application.ex05_OrdenacaoSelecao.executor": "Run",
-    "Application.ex07_OrdenacaoInsercao.executor": "Run",
-    "Application.ex09_OrdenacaoHeapSort.executor": "Run",
-    "Application.ex10_OrdenacaoQuickSort.executor": "Run",
-    "Application.ex11_OrdenacaoCoutingSort.executor": "Run",
-    "Application.ex13_OrdenacaoMergeSort.executor": "Run",
-    "Application.ex15_OrdenacaoSelecaoParcial.executor": "Run",
-    "Application.ex16_OrdenacaoInsercaoParcial.executor": "Run",
-    "Application.ex17_OrdenacaoHeapSortParcial.executor": "Run",
-    "Application.ex18_OrdenacaoQuickSortParcial.executor": "Run",
-    "Application.exercicioMax.executor": "Run",
-    "Application.jogandoCartasFora.executor": "Run",
-    "Application.leituraHtml.executor": "Run",
-    "Application.listanova.executor": "Run",
-    "Application.ordenacaoTamanho.executor": "Run",
-    "Application.sig.executor": "Run",
-    "Application.sort.executor": "Debug",
-    "Application.tecladoQuebrado.executor": "Debug",
-    "Application.tecladoQuebradoRapido.executor": "Run",
-    "Application.teste.executor": "Run",
-    "Application.testeLexico.executor": "Run",
-    "Application.testeTAD_Lista.executor": "Run",
-    "Application.timeDuendes.executor": "Run",
-    "Application.unificado.executor": "Run",
-    "Python.desempenhoBarras.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "ShowUsagesActions.previewPropertyKey": "true",
-    "extract.method.default.visibility": "private",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/tps/tp3/ex04_FilaCircularSequencialC",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "project.propCompiler",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.AlfabetoAlienigena.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.AmigosHabay.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ControladorVoo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Eletricidade.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ElfoTrevas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EstacionamentoLinear.executor&quot;: &quot;Run&quot;,
+    &quot;Application.EtiquetasNoel.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Fila.executor&quot;: &quot;Run&quot;,
+    &quot;Application.FilaSus.executor&quot;: &quot;Run&quot;,
+    &quot;Application.InfixaPosfixa.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListaCriancasPapaiNoel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ListaNova.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenorPilha.executor&quot;: &quot;Run&quot;,
+    &quot;Application.MenorPilhaRapido.executor&quot;: &quot;Run&quot;,
+    &quot;Application.OrganizacaoVagoes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PesquisaBinaria.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PesquisaSequencial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Pilha.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Pokemon.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PontosFeno.executor&quot;: &quot;Run&quot;,
+    &quot;Application.PresentesNoel.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuadroMedalhas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.QuickSortSeuPivo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ReadCSV.executor&quot;: &quot;Run&quot;,
+    &quot;Application.SequenciaSecreta.executor&quot;: &quot;Run&quot;,
+    &quot;Application.TrilhosNovamente.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.TrilhosNovamenteTracandoMovimentos.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.Van.executor&quot;: &quot;Run&quot;,
+    &quot;Application.VogaisAlienigenas.executor&quot;: &quot;Run&quot;,
+    &quot;Application.alarmeDespertador.executor&quot;: &quot;Run&quot;,
+    &quot;Application.algbool.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.algebraRecursiva.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.arquivo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ciframentoCesarRecursivo.executor&quot;: &quot;Run&quot;,
+    &quot;Application.dicionarioAndy.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex01_ListaAlocacaoSequencial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex03_PesquisaSequencial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex05_OrdenacaoSelecao.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex07_OrdenacaoInsercao.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex09_OrdenacaoHeapSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex10_OrdenacaoQuickSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex11_OrdenacaoCoutingSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex13_OrdenacaoMergeSort.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex15_OrdenacaoSelecaoParcial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex16_OrdenacaoInsercaoParcial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex17_OrdenacaoHeapSortParcial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ex18_OrdenacaoQuickSortParcial.executor&quot;: &quot;Run&quot;,
+    &quot;Application.exercicioMax.executor&quot;: &quot;Run&quot;,
+    &quot;Application.jogandoCartasFora.executor&quot;: &quot;Run&quot;,
+    &quot;Application.leituraHtml.executor&quot;: &quot;Run&quot;,
+    &quot;Application.listanova.executor&quot;: &quot;Run&quot;,
+    &quot;Application.ordenacaoTamanho.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sig.executor&quot;: &quot;Run&quot;,
+    &quot;Application.sort.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.tecladoQuebrado.executor&quot;: &quot;Debug&quot;,
+    &quot;Application.tecladoQuebradoRapido.executor&quot;: &quot;Run&quot;,
+    &quot;Application.teste.executor&quot;: &quot;Run&quot;,
+    &quot;Application.testeLexico.executor&quot;: &quot;Run&quot;,
+    &quot;Application.testeTAD_Lista.executor&quot;: &quot;Run&quot;,
+    &quot;Application.timeDuendes.executor&quot;: &quot;Run&quot;,
+    &quot;Application.unificado.executor&quot;: &quot;Run&quot;,
+    &quot;Python.desempenhoBarras.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;ShowUsagesActions.previewPropertyKey&quot;: &quot;true&quot;,
+    &quot;extract.method.default.visibility&quot;: &quot;private&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/berd/IdeaProjects/javatoso/src/tps/tp3/ex04_FilaCircularSequencialC&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/tps/tp3/ex04_FilaCircularSequencialC" />
@@ -233,7 +164,7 @@
       <recent name="tps.tp1.leituraHTML_ex07" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ex05_OrdenacaoSelecao">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="javatoso" />
@@ -343,6 +274,8 @@
       <workItem from="1730587733734" duration="2600000" />
       <workItem from="1730752649531" duration="109000" />
       <workItem from="1730753045852" duration="12759000" />
+      <workItem from="1730928814916" duration="5227000" />
+      <workItem from="1730983893573" duration="1306000" />
     </task>
     <servers />
   </component>
@@ -370,6 +303,10 @@
         <breakpoint enabled="true" type="java-exception">
           <properties class="java.lang.NullPointerException" package="java.lang" />
           <option name="timeStamp" value="180" />
+        </breakpoint>
+        <breakpoint enabled="true" type="java-exception">
+          <properties class="java.lang.NumberFormatException" package="java.lang" />
+          <option name="timeStamp" value="197" />
         </breakpoint>
         <line-breakpoint enabled="true" type="java-method">
           <url>file://$PROJECT_DIR$/src/labs/lab04/sort.java</url>
