@@ -1,4 +1,4 @@
-package exercicios.tads;
+package exercicios.estruturas.tads;
 
 public class Lista {
     public int[] lista;

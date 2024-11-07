@@ -1,11 +1,11 @@
-package exercicios.tads;
+package exercicios.estruturas.tads;
 
-public class ListaCustomizada {
+public class ex01 {
 
     private int[] list;
     private int n;
 
-    public ListaCustomizada(int tamanho) {
+    public ex01(int tamanho) {
         list = new int[tamanho];
         n = 0;
     }
@@ -51,7 +51,7 @@ public class ListaCustomizada {
     }
 
     public static void main(String[] args) {
-        ListaCustomizada lista = new ListaCustomizada(10); // Cria uma lista de tamanho 10
+        ex01 lista = new ex01(10); // Cria uma lista de tamanho 10
 
         lista.inserir(1);
         lista.inserir(-2);

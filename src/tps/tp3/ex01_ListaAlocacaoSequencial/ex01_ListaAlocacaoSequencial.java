@@ -1,4 +1,4 @@
-package tps.tp2.ex18_OrdenacaoQuickSortParcial;
+package tps.tp3.ex01_ListaAlocacaoSequencial;
 
 import java.io.BufferedReader;
 import java.io.FileReader;
@@ -11,10 +11,105 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
-public class ex18_OrdenacaoQuickSortParcial {
+class ListaPokemons {
+    private Pokemon[] pokemons;
+    private int n;
+
+    public ListaPokemons(int qtd) {
+        pokemons = new Pokemon[qtd];
+        n = 0;
+    }
+
+    public int getN() {
+        return this.n;
+    }
+
+    public Pokemon[] getPokemons() {
+        return this.pokemons;
+    }
+
+    public Pokemon getPokemon(int pos) {
+        return this.pokemons[pos];
+    }
+
+    public void inserirInicio(Pokemon pokemon) {
+        if (this.n >= this.pokemons.length) {
+            throw new ArrayStoreException("Lista cheia");
+        }
+        for (int i = this.n; i > 0; i--) {
+            this.pokemons[i] = this.pokemons[i - 1];
+        }
+        this.pokemons[0] = pokemon;
+        this.n++;
+    }
+
+    public void inserir(Pokemon pokemon, int pos) {
+        if (this.n >= this.pokemons.length) {
+            throw new ArrayStoreException("Lista cheia");
+        }
+        if (pos < 0 || pos > this.n) {
+            throw new ArrayIndexOutOfBoundsException("Posição inválida");
+        }
+
+        // Desloca os elementos para a direita para abrir espaço para o novo elemento
+        for (int i = this.n; i > pos; i--) {
+            this.pokemons[i] = this.pokemons[i - 1];
+        }
+        this.pokemons[pos] = pokemon;
+        this.n++;
+    }
+
+    public void inserirFim(Pokemon pokemon) {
+        if (this.n >= this.pokemons.length) {
+            throw new ArrayStoreException("Lista cheia");
+        }
+        this.pokemons[this.n] = pokemon;
+        this.n++;
+    }
+
+    public Pokemon removerInicio() {
+        if (this.n == 0 ){
+            throw new ArrayStoreException("Lista Vazia");
+        }
+        Pokemon resp = this.pokemons[0];
+        for (int i = 0; i < n; i++) {
+            this.pokemons[i] = this.pokemons[i + 1];
+        }
+        this.pokemons[n - 1] = null; // Remover a referencia ao Pokemon removido
+        this.n--;
+        return resp;
+    }
+
+    public Pokemon remover(int pos) {
+        if (n == 0 ){
+            throw new ArrayStoreException("Lista Vazia");
+        }
+        Pokemon resp = this.pokemons[pos];
+        for (int i = pos ; i < n ; i++){
+            this.pokemons[i] = this.pokemons[i+1];
+        }
+        this.pokemons[n - 1] = null; // Remover a referencia ao Pokemon removido
+        this.n--;
+        return resp;
+    }
+
+    public Pokemon removerFim() {
+        if (n == 0) {
+            throw new ArrayStoreException("Lista Vazia");
+        }
+        this.n--;
+        Pokemon resp = this.pokemons[n];
+        this.pokemons[n] = null; // Remover a referencia ao Pokemon removido
+        return resp;
+    }
+
+
+}
+
+public class ex01_ListaAlocacaoSequencial {
     public static void main(String[] args) {
         List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
-        List<Pokemon> pokedex = new ArrayList<>();
+        ListaPokemons listaPokemons = new ListaPokemons(801);
 
         Scanner sc = new Scanner(System.in);
         String string_entrada;
@@ -24,30 +119,45 @@ public class ex18_OrdenacaoQuickSortParcial {
             id_entrada = Integer.parseInt(string_entrada);
             Pokemon foundPokemon = PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada);
             if (foundPokemon != null) {
-                pokedex.add(foundPokemon);
+                listaPokemons.inserirFim(foundPokemon);
             } else {
                 System.out.println("Pokemon ID not found: " + id_entrada);
             }
         }
-        // Maximo de Saidas a serem impressas
-        int k = 10;
+        int qtd_operacoes = Integer.parseInt(sc.nextLine());
 
-        // Estava fazendo a restriçao da pokedex ser igual a K, mas o correto é ordenar a pokedex e imprimir os K primeiros
-        // Ordenar a pokedex parcialmente ate o k
-//        if (pokedex.size() > k) {
-//            pokedex = pokedex.subList(0, k);  // Restrict to the first 10 entries
-//        }
-
-
-        MyLog.startTimer();
-        PokemonSearch.quickSortParcial(pokedex, 0, pokedex.size() - 1, pokedex.size());
-        MyLog.endTimer();
-
-        for (int i = 0; i < k; i++) {
-            System.out.println(pokedex.get(i));
+        for (int i = 0; i < qtd_operacoes; i++) {
+            String[] operacao = sc.nextLine().split(" ");
+            switch
+            (operacao[0]) {
+                case "II":
+                    listaPokemons.inserirInicio(PokemonSearch.searchPokemonIdSequential(pokemons, Integer.parseInt(operacao[1])));
+                    break;
+                case "IF":
+                    listaPokemons.inserirFim(PokemonSearch.searchPokemonIdSequential(pokemons, Integer.parseInt(operacao[1])));
+                    break;
+                case "I*":
+                    listaPokemons.inserir(PokemonSearch.searchPokemonIdSequential(pokemons, Integer.parseInt(operacao[2])), Integer.parseInt(operacao[1]));
+                    break;
+                case "RI":
+                    // Deve-se imprimir o pokemon removido
+                    System.out.println("(R) "+ listaPokemons.removerInicio().getName());
+                     break;
+                case "RF":
+                    // Deve-se imprimir o pokemon removido
+                    System.out.println("(R) "+ listaPokemons.removerFim().getName());
+                    break;
+                case "R*":
+                    // Deve-se imprimir o pokemon removido
+                    System.out.println("(R) "+ listaPokemons.remover(Integer.parseInt(operacao[1])).getName());
+                    break;
+            }
         }
 
-        MyLog.createLog("853733", "quickSortParcial");
+
+        for (int i = 0; i < listaPokemons.getN(); i++) {
+            System.out.println("["+ i + "] " + listaPokemons.getPokemon(i));
+        }
     }
 }
 
@@ -314,98 +424,6 @@ class PokemonSearch {
         return null;
     }
 
-    // Funcao para ordenar uma lista de Pokemons parcialmente ate o k pelo generation usando QuickSort Parcial e o desempate sendo o nome
-    private static int comparePokemon(Pokemon p1, Pokemon p2) {
-        if (p1.getGeneration() != p2.getGeneration()) {
-            return Integer.compare(p1.getGeneration(), p2.getGeneration());
-        } else {
-            return p1.getName().compareTo(p2.getName());
-        }
-    }
-
-    private static int partition(List<Pokemon> pokedex, int low, int high) {
-        Pokemon pivot = pokedex.get(high);
-        int i = (low - 1);
-
-        for (int j = low; j < high; j++) {
-            MyLog.countComp(1); // Counting comparison
-            if (comparePokemon(pokedex.get(j), pivot) <= 0) {
-                i++;
-                Pokemon temp = pokedex.get(i);
-                pokedex.set(i, pokedex.get(j));
-                pokedex.set(j, temp);
-                MyLog.countMove(3); // Counting movement
-            }
-        }
-
-        Pokemon temp = pokedex.get(i + 1);
-        pokedex.set(i + 1, pokedex.get(high));
-        pokedex.set(high, temp);
-        MyLog.countMove(3); // Counting movement
-
-        return i + 1;
-    }
-
-    public static void quickSortParcial(List<Pokemon> pokedex, int low, int high, int k) {
-        if (low < high && low < k) {
-            int pi = partition(pokedex, low, high);
-
-            if (pi >= k) {
-                quickSortParcial(pokedex, low, pi - 1, k);
-            } else {
-                quickSortParcial(pokedex, low, pi - 1, k);
-                quickSortParcial(pokedex, pi + 1, high, k);
-            }
-        }
-    }
-
 
 }
 
-
-class MyLog {
-
-    // Variaveis "globais"
-    private static long startTime = 0;
-    private static long endTime = 0;
-    private static int totalComp = 0;
-    private static int totalMove = 0;
-
-    // Função para regular comparações
-    static void countComp(int x){
-        totalComp += x;
-    }
-
-    // Função para regular movimentações
-    static void countMove(int x){
-        totalMove += x;
-    }
-
-    // Função para começar o cronometro
-    public static void startTimer() {
-        startTime = System.currentTimeMillis();
-    }
-
-    // Função para encerrar o cronometro
-    public static void endTimer() {
-        endTime = System.currentTimeMillis();
-    }
-
-    // Função para calcular o tempo gasto
-    static long getTime() {
-        return endTime - startTime;
-    }
-
-    // Função para criar o txt contendo as informações de comparações e tempo
-    public static void createLog(final String matricula, final String metodo) {
-        try {
-            FileWriter logArq = new FileWriter(matricula + "_" + metodo +".txt");
-            logArq.write(matricula + "\t" + getTime() + "\t" + totalComp + "\t" + totalMove + "\n");
-            logArq.close();
-        }
-        catch (Exception e) {
-            e.printStackTrace();
-            System.out.println("Erro ao criar txt");
-        }
-    }
-}

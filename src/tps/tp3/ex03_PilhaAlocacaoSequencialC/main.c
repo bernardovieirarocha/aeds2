@@ -4,7 +4,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <sys/time.h>
 #include <time.h>
 
 // --- Estruturas de Dados
@@ -39,6 +38,14 @@ struct PokeList {
   int tamanho;
   int capacidade;
 } typedef PokeList;
+
+struct PokePilha
+{
+  pokemon *pokemon;
+  int tamanho;
+  int capacidade;
+} typedef PokePilha;
+
 
 int comparacoes = 0;
 int movimentacoes = 0;
@@ -300,7 +307,7 @@ void addPokemon(Pokedex *p, pokemon *poke) {
 
 // Desaloca um pokemon da memoria
 void deletePokemon(pokemon *p) {
-  if (existePokemon(p)) {
+  if (existePokemon(p) && p != NULL) {
     free(p->id);
     free(p->name);
     free(p->description);
@@ -534,134 +541,97 @@ pokemon *procurarPokemon(Pokedex *pokedex, char *id) {
   return NULL;
 }
 
-// Funcao para adicionar um pokemon na lista de pokemons
-void addPokemonList(PokeList *pokeList, pokemon *poke) {
-  if (poke == NULL) {
+PokePilha* createPokePilha() {
+  PokePilha *p = (PokePilha *)malloc(sizeof(PokePilha));
+  if (p == NULL) {
+    printf("Memory allocation error\n");
+    return NULL;
+  }
+  p->tamanho = 0;
+  p->capacidade = 801;
+  p->pokemon = (pokemon *)malloc(p->capacidade * sizeof(pokemon));
+  if (p->pokemon == NULL) {
+    printf("Memory allocation error\n");
+    free(p);
+    return NULL;
+  }
+  return p;
+}
+
+void empilharPoke(PokePilha *p, pokemon *poke) {
+  if (p->tamanho >= p->capacidade) {
+    printf("Pilha cheia\n");
     return;
   }
-  pokeList->pokemon[pokeList->tamanho] = *poke;
-  pokeList->tamanho++;
+  p->pokemon[p->tamanho] = *poke;
+  p->tamanho++;
 }
 
-// ------ Funcoes para ordenar a lista de pokemons por height usando o algoritmo
-// HeapSort de forma Parcial Em caso de empate, ordenar por nome
-
-void swap(pokemon *a, pokemon *b) {
-  pokemon temp = *a;
-  *a = *b;
-  *b = temp;
+pokemon* desempilharPoke(PokePilha *p) {
+  if (p->tamanho == 0) {
+    printf("Pilha vazia\n");
+    return NULL;
+  }
+  p->tamanho--;
+  return &p->pokemon[p->tamanho];
 }
 
-// Função auxiliar para manter a propriedade de heap
-void heapify(PokeList *pokemons, int n, int i) {
-  int maior = i;            // Inicializa o maior como a raiz
-  int esquerda = 2 * i + 1; // Filho à esquerda
-  int direita = 2 * i + 2;  // Filho à direita
-
-  // Se o filho à esquerda for maior que a raiz (compara pela altura e nome)
-  comparacoes++;
-  if (esquerda < n) {
-    if ((pokemons->pokemon[esquerda].height > pokemons->pokemon[maior].height ||
-         (pokemons->pokemon[esquerda].height ==
-              pokemons->pokemon[maior].height &&
-          strcmp(pokemons->pokemon[esquerda].name,
-                 pokemons->pokemon[maior].name) > 0))) {
-      maior = esquerda;
-    }
+pokemon* topoPoke(PokePilha *p) {
+  if (p->tamanho == 0) {
+    printf("Pilha vazia\n");
+    return NULL;
   }
-
-  comparacoes++;
-  // Se o filho à direita for maior que o maior atual (compara pela altura e nome)
-  if (direita < n) {
-    if (pokemons->pokemon[direita].height > pokemons->pokemon[maior].height ||
-        (pokemons->pokemon[direita].height ==
-             pokemons->pokemon[maior].height &&
-         strcmp(pokemons->pokemon[direita].name,
-                pokemons->pokemon[maior].name) > 0)) {
-      maior = direita;
-    }
-  }
-
-  // Se o maior não for a raiz
-  if (maior != i) {
-    movimentacoes++;
-    swap(&pokemons->pokemon[i], &pokemons->pokemon[maior]);
-    // Recursivamente faz heapify na subárvore afetada
-    heapify(pokemons, n, maior);
-  }
+  return &p->pokemon[p->tamanho - 1];
 }
 
-// Função HeapSort para ordenar os Pokémons pela altura e, em caso de empate, pelo nome
-void heap_sort(PokeList *pokemons, int n) {
-  // Constrói o heap (reorganiza a lista)
-  for (int i = n / 2 - 1; i >= 0; i--) {
-    heapify(pokemons, n, i);
-  }
+// ------- FIM DAS FUNCOES DE ORDENACAO
 
-  // Um por um extrai um elemento do heap
-  for (int i = n - 1; i > 0; i--) {
-    movimentacoes++;
+int main(void) {
+  setlocale(LC_CTYPE, "UTF-8");
 
-    // Move a raiz atual para o fim
-    swap(&pokemons->pokemon[0], &pokemons->pokemon[i]);
+  Pokedex *pokedex = alocatePokedex();
 
-    // Chama heapify na heap reduzida
-    heapify(pokemons, i, 0);
-  }
-}
+  char *filename = "/tmp/pokemon.csv";
+  lerCSV(pokedex, filename, "1");
+
+  PokePilha * pokePilha = createPokePilha();
 
 
-  // ------- FIM DAS FUNCOES DE ORDENACAO
-
-  int main(void) {
-    setlocale(LC_CTYPE, "UTF-8");
-
-    Pokedex *pokedex = alocatePokedex();
-
-    char *filename = "/tmp/pokemon.csv";
-    lerCSV(pokedex, filename, "1");
-
-    PokeList *pokeList = (PokeList *)malloc(sizeof(PokeList));
-    pokeList->tamanho = 0;
-    pokeList->capacidade = 1000;
-    pokeList->pokemon =
-        (pokemon *)malloc(pokeList->capacidade * sizeof(pokemon));
-
-    char id[4];
+  char id[4];
+  scanf("%s", id);
+  while (strcmp(id, "FIM") != 0 && strcmp(id, "0") != 0) {
+    empilharPoke(pokePilha, procurarPokemon(pokedex, id));
     scanf("%s", id);
-    while (strcmp(id, "FIM") != 0 && strcmp(id, "0") != 0) {
-      addPokemonList(pokeList, procurarPokemon(pokedex, id));
-      scanf("%s", id);
-    }
-
-    // Pegar o tempo de execução do programa
-    clock_t start_time = clock();
-
-    // HeapSort Parcial para ordenar a lista de pokemons
-    int k = 10;
-    heap_sort(pokeList, pokeList->tamanho);
-    // Finaliza a medição do tempo
-    clock_t end_time = clock();
-    double execution_time = ((double)(end_time - start_time)) / CLOCKS_PER_SEC;
-
-    // Printar a lista de pokemons ordenada
-    for (int i = 0; i < k; i++) {
-      printPokemon(&pokeList->pokemon[i]);
-    }
-
-    // Criar arquivo de log
-    FILE *logFile;
-    logFile = fopen("853733_heapSortParcial.txt", "w");
-    if (logFile == NULL) {
-      printf("Erro ao criar arquivo de log\n");
-      return 1;
-    }
-    // Escreve no formato: matrícula \t tempo de execução \t número de
-    // comparações
-    fprintf(logFile, "853733\t%f\t%d\t%d\n", execution_time, comparacoes,
-            movimentacoes);
-    fclose(logFile);
-
-    free(pokeList->pokemon);
-    return 0;
   }
+
+  int qtd_operacoes = 0;
+  scanf("%d", &qtd_operacoes);
+  // Consumir o \n
+  getchar();
+
+  for (int i = 0; i < qtd_operacoes; i++) {
+    char operacao[10];
+    scanf("%s", operacao);
+    if (strcmp(operacao, "I") == 0) {
+      char id[4];
+      scanf("%s", id);
+      empilharPoke(pokePilha, procurarPokemon(pokedex, id));
+    } else if (strcmp(operacao, "R") == 0) {
+      int posicao;
+      scanf("%d", &posicao);
+      pokemon *poke = desempilharPoke(pokePilha);
+      printf("(R) %s\n", getName(poke));
+      
+    }
+  }
+
+  // Printar a lista de pokemons ordenada
+  for (int i = 0; i < pokePilha->tamanho; i++) {
+    printf("[%d] ", i);
+    printPokemon(&pokePilha->pokemon[i]);
+  }
+
+  free(pokePilha->pokemon);
+  
+  return 0;
+}
