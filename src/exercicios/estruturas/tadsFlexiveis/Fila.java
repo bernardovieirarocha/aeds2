@@ -207,7 +207,7 @@ public class Fila {
         Celula primeiro = new Celula();
         // Cria uma célula para percorrer a pilha
         Celula ultimo = primeiro;
-        // Chama o método recursivo que percorre a pilha e insere os elementos na fila
+        // Chama o metodo recursivo que percorre a pilha e insere os elementos na fila
         ultimo = toFilaMax(topo, primeiro);
         return primeiro;
     }
