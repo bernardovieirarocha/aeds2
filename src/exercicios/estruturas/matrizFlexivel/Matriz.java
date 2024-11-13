@@ -178,4 +178,8 @@ public class Matriz {
         }
     }
 
+    public int get(int i, int j) {
+        Celula temp = getPosition(i, j);
+        return temp.elemento;
+    }
 }

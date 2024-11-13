@@ -96,7 +96,7 @@ public class Pilha {
     /*
     * Exercício 07
     * Faça um metodo iterativo que mostre os elementos da pilha na ordem inversa
-    * O funcionamento é semelhante ao metodo mostrarElementosInverso, mas ao invés de chamar o método recursivamente, empilha os elementos em uma nova pilha e depois mostra os elementos da nova pilha
+    * O funcionamento é semelhante ao metodo mostrarElementosInverso, mas ao invés de chamar o metodo recursivamente, empilha os elementos em uma nova pilha e depois mostra os elementos da nova pilha
     *
     * */
     public static void mostrarElementosInversoIterativo(Pilha p) {

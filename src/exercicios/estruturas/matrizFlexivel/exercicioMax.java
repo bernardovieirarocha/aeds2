@@ -14,6 +14,28 @@ public class exercicioMax {
         }
     }
 
+    /*
+    * Exercício que faz uma pesquisa em uma matriz procurando como se fosse uma estrutura hibrida
+     */
+//    public static boolean pesquisarMatriz(Matriz a, int x) {
+//        Celula linhaAtual = a.getInicio();
+//        for (int i = 0; i < a.getLinha(); i++){
+//            Celula colunaAtual = linhaAtual;
+//            for (int j = 0; j < a.getColuna(); j++) {
+//                CelulaListaEncadeada celulaListaEncadeada= colunaAtual.lista;
+//                while (celulaListaEncadeada != null){
+//                    if (celulaListaEncadeada.elemento == x){
+//                        return true;
+//                    }
+//                    celulaListaEncadeada = celulaListaEncadeada.prox;
+//                }
+//                colunaAtual = colunaAtual.dir;
+//            }
+//            linhaAtual = linhaAtual.inf;
+//        }
+//        return false;
+//    }
+
     public static void main(String[] args) {
         Matriz a = new Matriz(3, 3);
         Matriz b = new Matriz(3, 3);

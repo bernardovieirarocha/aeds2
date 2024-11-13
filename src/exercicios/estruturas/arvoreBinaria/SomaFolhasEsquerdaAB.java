@@ -14,6 +14,7 @@ package exercicios.estruturas.arvoreBinaria;
 //        // Recursive calls for left and right subtrees
 //        return sumOfLeftLeaves(root.left) + sumOfLeftLeaves(root.right);
 //    }
+
 //    public static void main(String[] args) {
 //        TreeNode2 root = new TreeNode2(3);
 //        root.left = new TreeNode2(9);
@@ -24,4 +25,3 @@ package exercicios.estruturas.arvoreBinaria;
 //        System.out.println(sumOfLeftLeaves(root));
 //    }
 //}
-

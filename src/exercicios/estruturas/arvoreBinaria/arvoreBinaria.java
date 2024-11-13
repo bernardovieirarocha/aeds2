@@ -347,8 +347,8 @@ public class arvoreBinaria {
     }
 
     /*
-     * Método para realizar o caminhamento central (in-order traversal) da árvore.
-     * Este método adiciona os valores da árvore em ordem crescente a uma lista.
+     * Metodo para realizar o caminhamento central (in-order traversal) da árvore.
+     * Este Metodo adiciona os valores da árvore em ordem crescente a uma lista.
      *
      * @param i Nó atual da árvore onde o caminhamento está sendo realizado.
      * @param lista Lista que armazena os valores em ordem.
@@ -362,7 +362,7 @@ public class arvoreBinaria {
     }
 
     /*
-     * Método para exibir a árvore em ordem (in-order traversal).
+     * Metodo para exibir a árvore em ordem (in-order traversal).
      *
      * @param i Nó atual da árvore onde o caminhamento está sendo realizado.
      */
@@ -374,14 +374,14 @@ public class arvoreBinaria {
         }
     }
 
-    // Método público para iniciar a exibição da árvore em ordem.
+    // Metodo público para iniciar a exibição da árvore em ordem.
     public void exibirEmOrdem() {
         exibirEmOrdem(raiz);
         System.out.println();
     }
 
     /*
-     * Método público para obter uma lista de elementos em ordem crescente.
+     * Metodo público para obter uma lista de elementos em ordem crescente.
      *
      * @return Lista de inteiros ordenados.
      */
@@ -466,8 +466,8 @@ public class arvoreBinaria {
     }
 
     /*
-     * Método para realizar o TreeSort.
-     * Este método recebe um array, insere seus elementos na árvore e retorna um array ordenado.
+     * Metodo para realizar o TreeSort.
+     * Este Metodo recebe um array, insere seus elementos na árvore e retorna um array ordenado.
      *
      * @param array Array de inteiros a ser ordenado.
      * @return Array de inteiros ordenados.
@@ -558,7 +558,7 @@ public class arvoreBinaria {
         // Converter as listas em uma árvore binária intercalada
         No raiz = toAB(listaSimples, listaDupla);
 
-        // Método para exibir a árvore (in-order traversal para verificar a estrutura)
+        // Metodo para exibir a árvore (in-order traversal para verificar a estrutura)
         exibirEmOrdem(raiz);
     }
 

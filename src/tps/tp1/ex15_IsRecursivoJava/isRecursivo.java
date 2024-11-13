@@ -78,7 +78,7 @@ public class isRecursivo {
     }
 
     /**
-     * Método principal que lê strings de entrada e verifica se contêm vogais,
+     * Metodo principal que lê strings de entrada e verifica se contêm vogais,
      * consoantes, inteiros e números de ponto flutuante.
      *
      * @param args argumentos da linha de comando (não utilizados)

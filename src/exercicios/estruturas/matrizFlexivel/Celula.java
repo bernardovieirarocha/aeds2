@@ -12,4 +12,6 @@ public class Celula {
         this.elemento = elemento;
         this.inf = sup = esq = dir = null;
     }
+
+
 }

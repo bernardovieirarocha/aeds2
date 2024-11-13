@@ -12,7 +12,7 @@
 public class ciframento {
 
     /**
-     * Método que cifra uma mensagem, deslocando cada caractere 3 posições no
+     * Metodo que cifra uma mensagem, deslocando cada caractere 3 posições no
      * código ASCII.
      *
      * @param message A mensagem a ser cifrada.
@@ -29,7 +29,7 @@ public class ciframento {
     }
 
     /**
-     * Método que verifica se a string é "FIM".
+     * Metodo que verifica se a string é "FIM".
      *
      * @param s A string a ser verificada.
      * @return true se a string for "FIM", false caso contrário.
@@ -40,7 +40,7 @@ public class ciframento {
     }
 
     /**
-     * Método principal que lê entradas, cifra as mensagens e imprime os
+     * Metodo principal que lê entradas, cifra as mensagens e imprime os
      * resultados. Utiliza MyIO.readLine() para leitura das entradas.
      *
      * @param args Argumentos de linha de comando (não utilizados).

@@ -9,7 +9,7 @@ import java.util.Random;
 @SuppressWarnings("WrongPackageStatement")
 public class alteracao {
   /**
-   * Método que verifica se a string é "FIM".
+   * Metodo que verifica se a string é "FIM".
    *
    * @param s A string a ser verificada.
    * @return true se a string for "FIM", false caso contrário.
@@ -20,7 +20,7 @@ public class alteracao {
   }
 
   /**
-   * Método que substitui todas as ocorrências de um caractere por outro em uma
+   * Metodo que substitui todas as ocorrências de um caractere por outro em uma
    * string.
    *
    * @param s A string na qual as substituições serão feitas.

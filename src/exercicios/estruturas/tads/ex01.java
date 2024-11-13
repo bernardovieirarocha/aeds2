@@ -18,7 +18,7 @@ public class ex01 {
         }
     }
 
-    // Método para inserir elementos positivos em ordem crescente
+    // Metodo para inserir elementos positivos em ordem crescente
     private void inserirOrdenadoPositivo(int x) {
         if (n >= list.length) {
             throw new IndexOutOfBoundsException("Lista cheia");
@@ -34,7 +34,7 @@ public class ex01 {
         n++;
     }
 
-    // Método para inserir elementos negativos no fim
+    // Metodo para inserir elementos negativos no fim
     private void inserirFim(int x) {
         if (n >= list.length) {
             throw new IndexOutOfBoundsException("Lista cheia");
