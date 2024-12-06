@@ -4,35 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="estudos prova teorica 2">
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/matrizFlexivel/C/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex05_ListaAlocacaoFlexivelC/build/Debug/main.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex05_ListaAlocacaoFlexivelC/build/Debug/outDebug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex05_ListaAlocacaoFlexivelC/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex06_PilhaAlocacaoFlexivelC/build/Debug/main.o" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex06_PilhaAlocacaoFlexivelC/build/Debug/outDebug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex06_PilhaAlocacaoFlexivelC/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex06_PilhaAlocacaoFlexivelC/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex06_PilhaAlocacaoFlexivelC/my.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex06_PilhaAlocacaoFlexivelC/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex06_PilhaAlocacaoFlexivelC/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex07_FilaAlocacaoFlexivelC/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex07_FilaAlocacaoFlexivelC/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex07_FilaAlocacaoFlexivelC/my.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex07_FilaAlocacaoFlexivelC/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex07_FilaAlocacaoFlexivelC/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/853733_quicksort2.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/main" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/main.c" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/my.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/pub.out" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex09_PilhaAlocacaoFlexivel/ex09_PilhaAlocacaoFlexivel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex10_ListaDuplamenteEncadeada/ex10_ListaDuplamenteEncadeada.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex11_MatrizDinamica/Matriz.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex11_MatrizDinamica/pub.in" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/tps/tp3/ex11_MatrizDinamica/pub.out" afterDir="false" />
+    <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="fim tp3">
+      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/BalanceamentoAB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/ExercicioExemploBalanceamento.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/No.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex01_AB/ex01_AB.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex02_ABdeABs/ex02_ABdeABs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex02_ABdeABs/teste.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex03_AB_AVL/main.c" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex04_AB_Alvinegra/ex04_AB_Alvinegra.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex05_HashDiretaReserva/ex05_HashDiretaReserva.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex06_HashDiretaRehash/ex06_HashDiretaRehash.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex07_HashIndiretaListaSimples/ex07_HashIndiretaListaSimples.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tps/tp4/ex07_HashIndiretaListaSimples/main.c" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/arvoreBinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/arvoreBinaria.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/853733_quicksort2.txt" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp3/ex08_QuickSortListaDinamicamenteEncadeadaC/853733_quicksort2.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,7 +56,7 @@
     <hideBySeverity>
       <option value="200" />
     </hideBySeverity>
-    <option name="selectedTabId" value="ProjectErrors" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 0
@@ -90,6 +77,7 @@
     "Application.ElfoTrevas.executor": "Run",
     "Application.EstacionamentoLinear.executor": "Run",
     "Application.EtiquetasNoel.executor": "Debug",
+    "Application.ExercicioExemploBalanceamento.executor": "Run",
     "Application.Fila.executor": "Debug",
     "Application.FilaSemNoCabeca.executor": "Run",
     "Application.FilaSus.executor": "Run",
@@ -125,9 +113,15 @@
     "Application.arvoreBinaria.executor": "Run",
     "Application.ciframentoCesarRecursivo.executor": "Run",
     "Application.dicionarioAndy.executor": "Run",
+    "Application.ex01_AB.executor": "Run",
     "Application.ex01_ListaAlocacaoSequencial.executor": "Run",
+    "Application.ex02_ABdeABs.executor": "Run",
     "Application.ex03_PesquisaSequencial.executor": "Run",
+    "Application.ex04_AB_Alvinegra.executor": "Run",
+    "Application.ex05_HashDiretaReserva.executor": "Run",
     "Application.ex05_OrdenacaoSelecao.executor": "Run",
+    "Application.ex06_HashDiretaRehash.executor": "Run",
+    "Application.ex07_HashIndiretaListaSimples.executor": "Run",
     "Application.ex07_OrdenacaoInsercao.executor": "Run",
     "Application.ex09_OrdenacaoHeapSort.executor": "Run",
     "Application.ex09_PilhaAlocacaoFlexivel.executor": "Run",
@@ -152,6 +146,7 @@
     "Application.testeLexico.executor": "Run",
     "Application.testeTAD_Lista.executor": "Run",
     "Application.timeDuendes.executor": "Run",
+    "Application.tps.tp4.ex02_ABdeABs.teste.executor": "Run",
     "Application.unificado.executor": "Run",
     "Python.desempenhoBarras.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -160,7 +155,7 @@
     "extract.method.default.visibility": "private",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/tps/tp3/ex11_MatrizDinamica",
+    "last_opened_file_path": "/Users/berd/IdeaProjects/javatoso/src/tps/tp4/ex07_HashIndiretaListaSimples",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -175,11 +170,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/tps/tp4/ex07_HashIndiretaListaSimples" />
+      <recent name="$PROJECT_DIR$/src/tps/tp4/ex03_AB_AVL" />
       <recent name="$PROJECT_DIR$/src/tps/tp3/ex11_MatrizDinamica" />
       <recent name="$PROJECT_DIR$/src/tps/tp3/ex10_ListaDuplamenteEncadeada" />
       <recent name="$PROJECT_DIR$/src/tps/tp3/ex09_PilhaAlocacaoFlexivel" />
-      <recent name="$PROJECT_DIR$/src/tps/tp3/ex04_FilaCircularSequencialC" />
-      <recent name="$PROJECT_DIR$/src/tps/tp2/ex18_OrdenacaoQuickSortParcial" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/provas/p1/pratica/JAVA" />
@@ -315,7 +310,14 @@
       <workItem from="1731021657717" duration="21193000" />
       <workItem from="1731246414731" duration="829000" />
       <workItem from="1731457295765" duration="3374000" />
-      <workItem from="1731681265836" duration="3740000" />
+      <workItem from="1731681265836" duration="3846000" />
+      <workItem from="1732140131546" duration="1495000" />
+      <workItem from="1732485762440" duration="3067000" />
+      <workItem from="1733190538651" duration="1893000" />
+      <workItem from="1733361858510" duration="1446000" />
+      <workItem from="1733364201627" duration="89000" />
+      <workItem from="1733365305970" duration="1167000" />
+      <workItem from="1733397281282" duration="13519000" />
     </task>
     <task id="LOCAL-00001" summary="estudos prova teorica 2 + questoes TP">
       <option name="closed" value="true" />
@@ -333,7 +335,15 @@
       <option name="project" value="LOCAL" />
       <updated>1731461382941</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="fim tp3">
+      <option name="closed" value="true" />
+      <created>1731693950108</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1731693950108</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -354,7 +364,8 @@
     <MESSAGE value="inicio tp3 - prova pratica" />
     <MESSAGE value="estudos prova teorica 2 + questoes TP" />
     <MESSAGE value="estudos prova teorica 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="estudos prova teorica 2" />
+    <MESSAGE value="fim tp3" />
+    <option name="LAST_COMMIT_MESSAGE" value="fim tp3" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -459,6 +470,27 @@
           <url>file://$PROJECT_DIR$/src/exercicios/beecrowd/TrilhosNovamente/laura/TrilhosNovamente.java</url>
           <line>19</line>
           <option name="timeStamp" value="196" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tps/tp4/ex05_HashDiretaReserva/ex05_HashDiretaReserva.java</url>
+          <line>115</line>
+          <option name="timeStamp" value="200" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tps/tp4/ex05_HashDiretaReserva/ex05_HashDiretaReserva.java</url>
+          <line>124</line>
+          <option name="timeStamp" value="209" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/tps/tp4/ex05_HashDiretaReserva/ex05_HashDiretaReserva.java</url>
+          <line>125</line>
+          <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-field">
+          <url>file://$PROJECT_DIR$/src/tps/tp4/ex05_HashDiretaReserva/ex05_HashDiretaReserva.java</url>
+          <line>18</line>
+          <properties field="reserva" class="TabelaHashReserva" />
+          <option name="timeStamp" value="212" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
