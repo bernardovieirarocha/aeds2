@@ -11,6 +11,44 @@ import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
 
+public class ex02_ABdeAbs {
+    public static void main(String[] args) {
+        List<Pokemon> pokemons = ReadCSV.readCSV("/tmp/pokemon.csv");
+
+        AB_Principal abPrincipal = new AB_Principal();
+
+        int[] inicial = {7, 3, 11, 1, 5, 9, 13, 0, 2, 4, 6, 8, 10, 12, 14};
+        for (int i : inicial) {
+            abPrincipal.inserirInicio(i);
+        }
+
+        Scanner sc = new Scanner(System.in);
+        String string_entrada;
+        int id_entrada;
+
+        while (!(string_entrada = sc.nextLine()).equals("FIM")) {
+            id_entrada = Integer.parseInt(string_entrada);
+            Pokemon foundPokemon = PokemonSearch.searchPokemonIdSequential(pokemons, id_entrada);
+            if (foundPokemon != null) {
+                int chave = foundPokemon.getCaptureRate() % 15;
+                abPrincipal.inserir(chave, foundPokemon.getName());
+            } else {
+                System.out.println("Pokemon ID not found: " + id_entrada);
+            }
+        }
+
+        MyLog.startTimer();
+
+        while (!(string_entrada = sc.nextLine()).equals("FIM")) {
+            System.out.println(abPrincipal.pesquisarNome(string_entrada) ? "SIM" : "NAO");
+        }
+
+        MyLog.endTimer();
+
+        MyLog.createLog("853733", "arvoreArvore");
+
+    }
+}
 class Pokemon {
 
     private int id;
@@ -220,7 +258,6 @@ class Pokemon {
 
 }
 
-
 class ReadCSV {
 
     // Funcao para ler o arquivo CSV e retornar uma lista de Pokemons
@@ -259,8 +296,6 @@ class ReadCSV {
     }
 
 }
-
-
 
 class MyLog {
 
@@ -309,7 +344,6 @@ class MyLog {
     }
 }
 
-
 class PokemonSearch {
 
     // Funcao estatica que busca um Pokemon pelo ID
@@ -325,7 +359,6 @@ class PokemonSearch {
 
 }
 
-
 class No1 {
     public int chave;
     public No1 esq, dir;
@@ -338,69 +371,73 @@ class No1 {
         this.arvoreSecundaria = new AB_Nomes();
     }
 
-    public void mostrar() {
-        System.out.println("Chave: " + chave);
-        arvoreSecundaria.mostrar();
-    }
 }
 
 class AB_Principal {
-    No1 raiz;
+    private No1 raiz;
 
     public AB_Principal() {
         this.raiz = null;
     }
 
-    public void criarArvorePrincipal() {
-        int[] ordemInsercao = {7, 3, 11, 1, 5, 9, 13, 0, 2, 4, 6, 8, 10, 12, 14};
-        for (int chave : ordemInsercao) {
-            inserir(chave);
-        }
+    public boolean pesquisarNome(String nome) {
+        System.out.println("=> " + nome );
+        System.out.print("raiz ");
+        boolean[] encontrado = new boolean[1];
+        encontrado[0] = false;
+        pesquisarNome(raiz, nome, encontrado);
+        return encontrado[0];
     }
 
-    private void inserir(int chave) {
-        raiz = inserir(chave, raiz);
-    }
-
-    private No1 inserir(int chave, No1 no) {
-        if (no == null) {
-            no = new No1(chave);
-        } else if (chave < no.chave) {
-            no.esq = inserir(chave, no.esq);
-        } else if (chave > no.chave) {
-            no.dir = inserir(chave, no.dir);
-        }
-        return no;
-    }
-
-    public void inserirPokemon(Pokemon pokemon) {
-        int chave = pokemon.getCaptureRate() % 15;
-        inserirPokemon(pokemon, raiz, chave);
-    }
-
-    private void inserirPokemon(Pokemon pokemon, No1 no, int chave) {
+    private void pesquisarNome(No1 no, String nome, boolean[] encontrado) {
         if (no != null) {
-            if (chave == no.chave) {
-                no.arvoreSecundaria.inserir(pokemon.getName());
-            } else if (chave < no.chave) {
-                inserirPokemon(pokemon, no.esq, chave);
-            } else {
-                inserirPokemon(pokemon, no.dir, chave);
+            encontrado[0] = no.arvoreSecundaria.pesquisarNome(nome);
+            if (!encontrado[0]) {
+                System.out.print(" ESQ ");
+                pesquisarNome(no.esq, nome, encontrado);
+            }
+            if (!encontrado[0]) {
+                System.out.print(" DIR ");
+                pesquisarNome(no.dir, nome, encontrado);
             }
         }
     }
 
-    public void mostrar() {
-        mostrar(raiz);
+    public void inserirInicio(int x) {
+        raiz = inserirInicio(x, raiz);
     }
 
-    private void mostrar(No1 no) {
-        if (no != null) {
-            mostrar(no.esq);
-            no.mostrar();
-            mostrar(no.dir);
+    private No1 inserirInicio(int x, No1 no){
+        if (no == null) {
+            no = new No1(x);
+        } else if (x < no.chave) {
+            no.esq = inserirInicio(x, no.esq);
+        } else if (x > no.chave) {
+            no.dir = inserirInicio(x, no.dir);
         }
+        return no;
     }
+
+    public void inserir(int x, String nome){
+        raiz = inserir(x, nome, raiz);
+    }
+
+    private No1 inserir(int x, String nome, No1 no) {
+        if (no == null) {
+            no = new No1(x);
+            MyLog.countComp(1);
+            no.arvoreSecundaria.inserir(nome);
+        } else if (x < no.chave) {
+            MyLog.countComp(1);
+            no.esq = inserir(x, nome, no.esq);
+        } else if (x > no.chave) {
+            no.dir = inserir(x, nome, no.dir);
+        } else {
+            no.arvoreSecundaria.inserir(nome);
+        }
+        return no;
+    }
+
 }
 
 class No2 {
@@ -412,14 +449,10 @@ class No2 {
         this.esq = null;
         this.dir = null;
     }
-
-    public void mostrar() {
-        System.out.println("Nome: " + chave);
-    }
 }
 
 class AB_Nomes {
-    No2 raiz;
+    private No2 raiz;
 
     public AB_Nomes() {
         this.raiz = null;
@@ -431,25 +464,37 @@ class AB_Nomes {
 
     private No2 inserir(String chave, No2 no) {
         if (no == null) {
+            MyLog.countComp(1);
             no = new No2(chave);
         } else if (chave.compareTo(no.chave) < 0) {
+            MyLog.countComp(1);
             no.esq = inserir(chave, no.esq);
         } else if (chave.compareTo(no.chave) > 0) {
+            MyLog.countComp(1);
             no.dir = inserir(chave, no.dir);
         }
         return no;
     }
 
-    public void mostrar() {
-        mostrar(raiz);
+    public boolean pesquisarNome(String nome) {
+        return pesquisarNome(raiz, nome);
     }
 
-    private void mostrar(No2 no) {
-        if (no != null) {
-            mostrar(no.esq);
-            no.mostrar();
-            mostrar(no.dir);
+    private boolean pesquisarNome(No2 no, String nome) {
+        while (no != null) {
+            if (no.chave.equals(nome)) {
+                MyLog.countComp(1);
+                return true;
+            } else if (nome.compareTo(no.chave) > 0 ) {
+                MyLog.countComp(1);
+                System.out.print("dir ");
+                no = no.dir;
+            } else {
+                MyLog.countComp(1);
+                System.out.print("esq ");
+                no = no.esq;
+            }
         }
+        return false;
     }
 }
-

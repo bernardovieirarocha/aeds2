@@ -745,7 +745,7 @@ int main(void) {
 
   // Criar arquivo de log
   FILE *logFile;
-  logFile = fopen("853733_quicksort2.txt", "w");
+  logFile = fopen("853733_avl.txt", "w");
   if (logFile == NULL) {
     printf("Erro ao criar arquivo de log\n");
     return 1;
