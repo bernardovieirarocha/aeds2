@@ -210,7 +210,7 @@ public class arvoreBinaria {
      * Análise de complexidade do metodo pesquisar:
      * - Melhor caso (Elemento no topo da árvore): O(1)
      * - Pior caso (Árvore desbalanceada): O(n)
-     *   - Neste caso, a árvore se torna uma lista encadeada e a pesquisa ocorre em O(n) devido à altura da árvore.
+     *   - Neste caso, a árvore se torna uma lista encadeada e a pesquisa ocorre em O(n) devido à a da árvore.
      * - Caso médio (Árvore balanceada): O(log n)
      *   - Em média, a altura da árvore é logarítmica em relação ao número de elementos.
      */
@@ -398,6 +398,15 @@ public class arvoreBinaria {
         return altura;
     }
 
+    public int getAltura(No i) {
+        if (i == null) {
+            return -1;
+        }
+        int altEsq = getAltura(i.esquerda);
+        int altDir = getAltura(i.direita);
+        return 1 + (altEsq > altDir ? altEsq : altDir);
+    }
+
     public static int  generateRandomElement() {
         return (int) (Math.random() * 100);
     }
@@ -516,6 +525,45 @@ public class arvoreBinaria {
         }
 
         return arvore.raiz;
+    }
+
+
+    public int altura() {
+        return altura(raiz);
+    }
+
+    public int altura(No raiz) {
+        if (raiz == null) {
+            return -1;
+        }
+        int alturaEsquerda = altura(raiz.esquerda);
+        int alturaDireita = altura(raiz.direita);
+        return 1 + Math.max(alturaEsquerda, alturaDireita);
+    }
+
+    public int qtdElementos() {
+        return qtdElementos(raiz);
+    }
+
+    public int qtdElementos(No raiz) {
+        if (raiz == null) {
+            return 0;
+        }
+        return 1 + qtdElementos(raiz.esquerda) + qtdElementos(raiz.direita);
+    }
+
+    public boolean isMax(double x) {
+        return isMax(raiz, x);
+    }
+
+    // Metodo pra fazer log na base 2
+    public static double log2(double n) {
+        return Math.log(n) / Math.log(2);
+    }
+
+    public boolean isMax(No raiz, double x) {
+        double maximo = x * log2(qtdElementos());
+        return altura(raiz) <= maximo;
     }
 
     public static void main(String[] args) {

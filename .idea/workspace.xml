@@ -4,11 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="alguns pubINS e exercicios">
+    <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="fim do tp4 - falta conferir">
+      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/Arvore234.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/ArvoreAVL.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tabelaHASH/Doidona.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp4/ex02_ABdeABs/ex02_ABdeABs.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp4/ex02_ABdeABs/ex02_ABdeAbs.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp4/ex02_ABdeABs/teste.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/tps/tp4/ex03_AB_AVL/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/src/tps/tp4/ex03_AB_AVL/main.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/arvoreBinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/arvoreBinaria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -184,7 +186,7 @@
       <recent name="tps.tp1.leituraHTML_ex07" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.ex05_OrdenacaoSelecao">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="javatoso" />
@@ -310,7 +312,8 @@
       <workItem from="1733397281282" duration="22060000" />
       <workItem from="1733499314603" duration="397000" />
       <workItem from="1733503039858" duration="2904000" />
-      <workItem from="1733506062576" duration="822000" />
+      <workItem from="1733506062576" duration="6715000" />
+      <workItem from="1733682905038" duration="2924000" />
     </task>
     <task id="LOCAL-00001" summary="estudos prova teorica 2 + questoes TP">
       <option name="closed" value="true" />
@@ -352,7 +355,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733446406802</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="fim do tp4 - falta conferir">
+      <option name="closed" value="true" />
+      <created>1733574826467</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1733574826467</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -376,7 +387,9 @@
     <MESSAGE value="fim tp3" />
     <MESSAGE value="inicio tp4" />
     <MESSAGE value="alguns pubINS e exercicios" />
-    <option name="LAST_COMMIT_MESSAGE" value="alguns pubINS e exercicios" />
+    <MESSAGE value="fim do tp3 - falta conferir" />
+    <MESSAGE value="fim do tp4 - falta conferir" />
+    <option name="LAST_COMMIT_MESSAGE" value="fim do tp4 - falta conferir" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -496,6 +509,11 @@
           <url>file://$PROJECT_DIR$/src/tps/tp4/ex05_HashDiretaReserva/ex05_HashDiretaReserva.java</url>
           <line>126</line>
           <option name="timeStamp" value="210" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$USER_HOME$/Downloads/Main.java</url>
+          <line>355</line>
+          <option name="timeStamp" value="215" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-field">
           <url>file://$PROJECT_DIR$/src/tps/tp4/ex05_HashDiretaReserva/ex05_HashDiretaReserva.java</url>
