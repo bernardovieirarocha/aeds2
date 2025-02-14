@@ -4,13 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="fim do tp4 - falta conferir">
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/Arvore234.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/ArvoreAVL.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/exercicios/estruturas/tabelaHASH/Doidona.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="5636d511-b2c0-490a-9f39-5609d85d80b2" name="Changes" comment="estudos p3 - teorica">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/arvoreBinaria.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercicios/estruturas/arvoreBinaria/arvoreBinaria.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -313,7 +308,8 @@
       <workItem from="1733499314603" duration="397000" />
       <workItem from="1733503039858" duration="2904000" />
       <workItem from="1733506062576" duration="6715000" />
-      <workItem from="1733682905038" duration="2924000" />
+      <workItem from="1733682905038" duration="3799000" />
+      <workItem from="1733973347309" duration="1117000" />
     </task>
     <task id="LOCAL-00001" summary="estudos prova teorica 2 + questoes TP">
       <option name="closed" value="true" />
@@ -363,7 +359,15 @@
       <option name="project" value="LOCAL" />
       <updated>1733574826467</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="estudos p3 - teorica">
+      <option name="closed" value="true" />
+      <created>1733705487716</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1733705487716</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -389,7 +393,8 @@
     <MESSAGE value="alguns pubINS e exercicios" />
     <MESSAGE value="fim do tp3 - falta conferir" />
     <MESSAGE value="fim do tp4 - falta conferir" />
-    <option name="LAST_COMMIT_MESSAGE" value="fim do tp4 - falta conferir" />
+    <MESSAGE value="estudos p3 - teorica" />
+    <option name="LAST_COMMIT_MESSAGE" value="estudos p3 - teorica" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
